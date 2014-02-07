@@ -74,47 +74,112 @@ def list_available_modules tank_id, module_type
   return details
 end
 
-def list_available_module_names tank_id, module_type
-  modules = list_available_modules(tank_id, module_type)
-  names = []
-  modules.each { |item| names.push(item['name_i18n']) }
-  return names
+def turret_json turret
+  turret_string = "
+    \"#{turret['name']}\": {
+        \"name\": \"#{turret['name_i18n']},
+        \"tier\": #{turret['level']},
+        \"viewRange\": #{turret['circular_vision_radius']},
+        \"traverseSpeed\": #{turret['rotation_speed']},
+        \"frontArmor\": [ #{turret['armor_forehead']}, 5 ],
+        \"sideArmor\": [ #{turret['armor_board']}, 5 ],
+        \"rearArmor\": [ #{turret['armor_fedd']}, 5],
+        \"weight\": #{turret['weight']},
+        \"stockModule\": #{turret['stock']},
+        \"topModule\": #{turret['top']},
+        \"experienceNeeded\": #{turret['price_xp']},
+        \"cost\": #{turret['price_credit']},
+        \"additionalHP\": 0,
+        \"availableGuns\": {
+
+        }
+
+      }
+      "
 end
 
-puts "Suspensions:"
-puts list_available_module_names(5137, "chassis")
-puts "Engines:"
-puts list_available_module_names(5137, "engines")
-puts "Guns:"
-puts list_available_module_names(5137, "guns")
-puts "Radios:"
-puts list_available_module_names(5137, "radios")
-puts "Turrets:"
-puts list_available_module_names(5137, "turrets")
-
-### Helper Methods 
-
-# Creates an array of all tank ids, useful for iterating through every tank
-def all_tanks_id_array
-  id_arr = []
-  tanks_hash = list_of_vehicles
-  tanks_hash.each_key { |key| id_arr.push(tanks_hash[key]['id']) }
-end
-
-# Creates a dynamic tally of all tanks based on the tank-level attribute supplied
-# as the argument. EG: all_tanks_count_by "type" would tally tanks by their class
-# "nation_i18n" would do it by country. It works for any top level element, though
-# there are only a handful of keys for which this kind of counting would be useful
-def all_tanks_count_by key
-  tanks_hash = list_of_vehicles
-  tally = Hash.new
-  tanks_hash.each_key do |tank|
-    if tally[tanks_hash[tank][key]]
-      tally[tanks_hash[tank][key]] += 1
-    else
-      tally[tanks_hash[tank][key]] = 1
-    end
+def turrets_json tank
+  turrets = tank['turrets']
+  # Turrets
+  available_turrets = []
+  turrets.each do |turret|
+    available_turrets.push(turret_details(turret['module_id']))
   end
-  return tally
+  # Create the stock and top values for each module
+  available_turrets.each do |turret|
+    turret['stock'] = false
+    turret['top'] = false
+  end
+  # Sort by module level
+  available_turrets.sort! { |x,y| x['level'] <=> y['level'] }
+  # After sorting, the first item will be stock, the last item will be top
+  available_turrets.first['stock'] = true
+  available_turrets.last['top'] = true
+
+  # Guns
+  guns = tank['guns']
+  available_guns = []
+  guns.each do |gun|
+    available_guns.push(gun_details(gun['module_id']))
+  end
+  available_guns.sort! { |x,y| x['level'] <=> y['level'] }
+
+  available_turrets.each do |turret|
+    turret_string = turret_json(turret)
+    turret_guns = available_guns.select { |x| x if x['turrets'].include?(turret['module_id']) }
+
+  end
 end
 
+
+def generate_tank_json_for_tank tank_id
+  # Fetch the tank details, to streamline the API calls, everything will be 
+  # contained in this method for now
+  tank = vehicle_details(tank_id)
+
+  # Conditionals for setting tank attributes
+
+  # Does the tank have a turret?
+  has_turret = tank['turrets'].count > 0
+  # If the tank is a premium tank, price is in gold, else price in credits
+  if tank['is_gift']
+    tank_cost = tank['price_gold']
+  else
+    tank_cost = tank['price_credit']
+  end
+
+  # FIELDS THAT WILL REQUIRE REVISION:
+  # experienceNeeded
+  # baseHitpoints
+  # gunArc
+  # camoValue
+  #
+  # Long JSON string with the attributes
+  tank_json = "
+  \"#{tank['name']}\": {
+    \"name\": \"#{tank['name_i18n']}\",
+    \"nation\": \"#{tank['nation_i18n']}\",
+    \"tier\": #{tank['level']},
+    \"type\": \"#{tank['type']}\",
+    \"premiumTank\": #{tank['is_gift']},
+    \"turreted\": #{has_turret},
+    \"experienceNeeded\": #{tank['price_xp']},
+    \"cost\": #{tank_cost},
+    \"baseHitpoints\": #{tank['max_health']},
+    \"gunArc\": 360,
+    \"speedLimit\": #{tank['speed_limit']},
+    \"camoValue\": 1.00,
+    \"crewLevel\": 100,
+    \"topWeight\": #{tank['weight']},
+    \"hull\": {
+      \"frontArmor\": [ #{tank['vehicle_armor_forehead']}, 5 ],
+      \"sideArmor\": [ #{tank['vehicle_armor_board']}, 5 ],
+      \"rearArmor\": [ #{tank['vehicle_armor_fedd']}, 5 ]
+    }
+
+  }
+  "
+  turrets_json(tank)
+end
+
+puts generate_tank_json_for_tank 5137
