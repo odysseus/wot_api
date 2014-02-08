@@ -90,53 +90,26 @@ def turret_json turret
         \"experienceNeeded\": #{turret['price_xp']},
         \"cost\": #{turret['price_credit']},
         \"additionalHP\": 0,
-        \"availableGuns\": {
-
-        }
-
-      }
-      "
+  "
 end
 
-def turrets_json tank
-  turrets = tank['turrets']
-  # Turrets
-  available_turrets = []
-  turrets.each do |turret|
-    available_turrets.push(turret_details(turret['module_id']))
-  end
-  # Create the stock and top values for each module
-  available_turrets.each do |turret|
-    turret['stock'] = false
-    turret['top'] = false
-  end
-  # Sort by module level
-  available_turrets.sort! { |x,y| x['level'] <=> y['level'] }
-  # After sorting, the first item will be stock, the last item will be top
-  available_turrets.first['stock'] = true
-  available_turrets.last['top'] = true
+def gun_json gun
+  gun_string = "
+  \"#{gun['name']}\" : {
+  \"name\": \"#{gun['name_i18n']}\",
+  \"tier\": #{gun['level']},
+  \"shells\": [
+  [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false],
+  [#{gun['piercing_power'][1]}, #{gun['damage'][1]}, 0, true],
+  [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false]
+  ],
+  \"rateOfFire\": #{gun['rate']},
 
-  # Guns
-  guns = tank['guns']
-  available_guns = []
-  guns.each do |gun|
-    available_guns.push(gun_details(gun['module_id']))
-  end
-  available_guns.sort! { |x,y| x['level'] <=> y['level'] }
-
-  available_turrets.each do |turret|
-    turret_string = turret_json(turret)
-    turret_guns = available_guns.select { |x| x if x['turrets'].include?(turret['module_id']) }
-
-  end
+  }
+  "
 end
 
-
-def generate_tank_json_for_tank tank_id
-  # Fetch the tank details, to streamline the API calls, everything will be 
-  # contained in this method for now
-  tank = vehicle_details(tank_id)
-
+def tank_json tank
   # Conditionals for setting tank attributes
 
   # Does the tank have a turret?
@@ -147,7 +120,6 @@ def generate_tank_json_for_tank tank_id
   else
     tank_cost = tank['price_credit']
   end
-
   # FIELDS THAT WILL REQUIRE REVISION:
   # experienceNeeded
   # baseHitpoints
@@ -175,11 +147,61 @@ def generate_tank_json_for_tank tank_id
       \"frontArmor\": [ #{tank['vehicle_armor_forehead']}, 5 ],
       \"sideArmor\": [ #{tank['vehicle_armor_board']}, 5 ],
       \"rearArmor\": [ #{tank['vehicle_armor_fedd']}, 5 ]
-    }
-
-  }
   "
-  turrets_json(tank)
+end
+
+
+# This method will generate the data and call the other methods containing the 
+# string conversions from the API data to the JSON representation used by the app
+def generate_tank_json_for_tank tank_id
+  tank = vehicle_details(tank_id)
+
+  # Does the tank have a turret?
+  has_turret = tank['turrets'].count > 0
+
+  # First input all the basic tank information
+  final_json = tank_json(tank)
+
+  turrets_string = ""
+  # Every tank has guns, so fetch those first
+  # Guns
+  guns = tank['guns']
+  available_guns = []
+  guns.each do |gun|
+    available_guns.push(gun_details(gun['module_id']))
+  end
+  available_guns.sort! { |x,y| x['level'] <=> y['level'] }
+
+  # First deal with Tank Destroyers, by adding the array of guns to the hull
+  if tank['turrets'].count == 0
+
+    # Now deal with turreted vehicles
+  else 
+    turrets = tank['turrets']
+    # Turrets
+    available_turrets = []
+    turrets.each do |turret|
+      available_turrets.push(turret_details(turret['module_id']))
+    end
+    # Create the stock and top values for each module
+    available_turrets.each do |turret|
+      turret['stock'] = false
+      turret['top'] = false
+    end
+    # Sort by module level
+    available_turrets.sort! { |x,y| x['level'] <=> y['level'] }
+    # After sorting, the first item will be stock, the last item will be top
+    available_turrets.first['stock'] = true
+    available_turrets.last['top'] = true
+
+    available_turrets.each do |turret|
+      turret_string = turret_json(turret)
+      turret_guns = available_guns.select { |x| x if x['turrets'].include?(turret['module_id']) }
+
+      turret_string << "\n}\n}"
+      turrets_string << turret_string
+    end
+  end
 end
 
 puts generate_tank_json_for_tank 5137
