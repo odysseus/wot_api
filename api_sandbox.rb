@@ -77,36 +77,87 @@ end
 def turret_json turret
   turret_string = "
     \"#{turret['name']}\": {
-        \"name\": \"#{turret['name_i18n']},
+        \"name\": \"#{turret['name_i18n']}\",
         \"tier\": #{turret['level']},
         \"viewRange\": #{turret['circular_vision_radius']},
         \"traverseSpeed\": #{turret['rotation_speed']},
         \"frontArmor\": [ #{turret['armor_forehead']}, 5 ],
         \"sideArmor\": [ #{turret['armor_board']}, 5 ],
         \"rearArmor\": [ #{turret['armor_fedd']}, 5],
-        \"weight\": #{turret['weight']},
+        \"weight\": 0,
         \"stockModule\": #{turret['stock']},
         \"topModule\": #{turret['top']},
-        \"experienceNeeded\": #{turret['price_xp']},
+        \"experienceNeeded\": 0,
         \"cost\": #{turret['price_credit']},
-        \"additionalHP\": 0,
-  "
+        \"additionalHP\": 0,"
 end
 
 def gun_json gun
   gun_string = "
-  \"#{gun['name']}\" : {
-  \"name\": \"#{gun['name_i18n']}\",
-  \"tier\": #{gun['level']},
-  \"shells\": [
-  [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false],
-  [#{gun['piercing_power'][1]}, #{gun['damage'][1]}, 0, true],
-  [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false]
-  ],
-  \"rateOfFire\": #{gun['rate']},
+    \"#{gun['name']}\" : {
+    \"name\": \"#{gun['name_i18n']}\",
+    \"tier\": #{gun['level']},
+    \"shells\": [
+    [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false],
+    [#{gun['piercing_power'][1]}, #{gun['damage'][1]}, 0, true],
+    [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false]
+    ],
+    \"rateOfFire\": #{gun['rate']},
+    \"accuracy\": 0,
+    \"aimTime\": 0,
+    \"gunDepression\": 0,
+    \"gunElevation\": 0,
+    \"weight\": 0,
+    \"stockModule\": #{gun['stock']},
+    \"topModule\": #{gun['top']},
+    \"experienceNeeded\": 0,
+    \"cost\": #{gun['price_credit']},
+    \"autoloader\": false
+  }"
+end
 
-  }
-  "
+def engine_json engine
+  engine_string = %Q$
+  "#{engine['name']}": {
+    "name": "#{engine['name_i18n']}",
+    "tier": #{engine['level']},
+    "horsepower": #{engine['power']},
+    "fireChance": 0.#{engine['fire_starting_chance']},
+    "weight": 0,
+    "stockModule": #{engine['stock']},
+    "topModule": #{engine['top']},
+    "experienceNeeded": 0,
+    "cost": #{engine['price_credit']}
+  }$
+end
+
+def radio_json radio
+  radio_string = %Q$
+  "#{radio['name']}": {
+    "name": "#{radio['name_i18n']}",
+    "tier": #{radio['level']},
+    "signalRange": #{radio['distance']},
+    "weight": 0,
+    "stockModule": #{radio['stock']},
+    "topModule": #{radio['top']},
+    "experienceNeeded": 0,
+    "cost": #{radio['price_credit']}
+  }$
+end
+
+def suspension_json suspension
+  suspension_string = %Q$
+  "#{suspension['name']}": {
+      "name": "#{suspension['name_i18n']}",
+      "tier": #{suspension['level']},
+      "loadLimit": #{suspension['max_load']},
+      "traverseSpeed": #{suspension['rotation_speed']},
+      "weight": 0,
+      "stockModule": #{suspension['stock']},
+      "topModule": #{suspension['top']},
+      "experienceNeeded": 0,
+      "cost": #{suspension['price_credit']}
+  }$
 end
 
 def tank_json tank
@@ -140,14 +191,13 @@ def tank_json tank
     \"baseHitpoints\": #{tank['max_health']},
     \"gunArc\": 360,
     \"speedLimit\": #{tank['speed_limit']},
-    \"camoValue\": 1.00,
+    \"camoValue\": 0.00,
     \"crewLevel\": 100,
     \"topWeight\": #{tank['weight']},
     \"hull\": {
       \"frontArmor\": [ #{tank['vehicle_armor_forehead']}, 5 ],
       \"sideArmor\": [ #{tank['vehicle_armor_board']}, 5 ],
-      \"rearArmor\": [ #{tank['vehicle_armor_fedd']}, 5 ]
-  "
+      \"rearArmor\": [ #{tank['vehicle_armor_fedd']}, 5 ]"
 end
 
 
@@ -162,7 +212,6 @@ def generate_tank_json_for_tank tank_id
   # First input all the basic tank information
   final_json = tank_json(tank)
 
-  turrets_string = ""
   # Every tank has guns, so fetch those first
   # Guns
   guns = tank['guns']
@@ -170,10 +219,26 @@ def generate_tank_json_for_tank tank_id
   guns.each do |gun|
     available_guns.push(gun_details(gun['module_id']))
   end
+
   available_guns.sort! { |x,y| x['level'] <=> y['level'] }
+  available_guns.each do |gun|
+    gun['stock'] = false
+    gun['top'] = false
+  end
+  available_guns.first['stock'] = true
+  available_guns.last['top'] = true
 
   # First deal with Tank Destroyers, by adding the array of guns to the hull
   if tank['turrets'].count == 0
+    guns_string = %Q$"availableGuns": {$
+    available_guns.each do |gun|
+      guns_string << gun_json(gun)
+      guns_string << "," unless gun == available_guns.last
+    end
+    guns_string << "\n}"
+    final_json << ",\n"
+    final_json << guns_string
+    final_json << "\n},"
 
     # Now deal with turreted vehicles
   else 
@@ -194,14 +259,93 @@ def generate_tank_json_for_tank tank_id
     available_turrets.first['stock'] = true
     available_turrets.last['top'] = true
 
+    final_json << "\n},\n\"turrets\": {"
     available_turrets.each do |turret|
       turret_string = turret_json(turret)
       turret_guns = available_guns.select { |x| x if x['turrets'].include?(turret['module_id']) }
-
-      turret_string << "\n}\n}"
-      turrets_string << turret_string
+      guns_string = %Q$\n"availableGuns": {$
+      turret_guns.each do |gun|
+        guns_string << gun_json(gun)
+        guns_string << "," unless gun == available_guns.last
+      end
+      guns_string << "\n}"
+      turret_string << guns_string
+      final_json << turret_string
+      final_json << "\n}"
+      final_json << "," unless turret == available_turrets.last
     end
+    # End of the turrets
+    final_json << "\n},"
   end
+
+  # Begin Engines
+  engines_string = %Q$\n"engines": {$
+  engines = tank['engines']
+  available_engines = []
+  engines.each do |engine|
+    available_engines.push(engine_details(engine['module_id']))
+  end
+  available_engines.each do |engine|
+    engine['stock'] = false
+    engine['top'] = false
+  end
+  available_engines.sort! { |x,y| x['level'] <=> y['level'] }
+  available_engines.first['stock'] = true
+  available_engines.last['top'] = true
+  available_engines.each do |engine|
+    engine_string = engine_json(engine)
+    engines_string << engine_string
+    engines_string << "," unless engine == available_engines.last
+  end
+  final_json << engines_string
+
+  # End Engines
+  final_json << %Q$\n},$
+
+  # Begin Suspensions
+  suspensions_string = %Q$\n"suspensions": {$
+  suspensions = tank['chassis']
+  available_suspensions = []
+  suspensions.each do |s|
+    available_suspensions.push(suspension_details(s['module_id']))
+  end
+  available_suspensions.each do |s|
+    s['stock'] = false
+    s['top'] = false
+  end
+  available_suspensions.sort! { |x,y| x['level'] <=> y['level'] }
+  available_suspensions.first['stock'] = true
+  available_suspensions.last['top'] = true
+  available_suspensions.each do |suspension|
+    suspension_string = suspension_json(suspension)
+    suspensions_string << suspension_string
+    suspensions_string << "," unless suspension == available_suspensions.last
+  end
+  final_json << suspensions_string
+
+  # End Suspensions
+  final_json << "\n},"
+
+  # Begin Radios
+  final_json << %Q$\n"radios": {$
+
+  # End Radios
+  final_json << "\n}"
+
+  # End Tank
+  final_json << "\n}"
+
+  return final_json
 end
 
+# Type 59 id:     49
+# Tiger II id:    5137
+# ISU-152 id:     7425
+# Hetzer id:      1809
+
+orig_std_out = STDOUT.clone
+STDOUT.reopen(File.open('output.json', 'w+'))
+
 puts generate_tank_json_for_tank 5137
+
+STDOUT.reopen(orig_std_out)
