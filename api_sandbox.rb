@@ -22,6 +22,22 @@ def list_of_vehicles
   tanks_hash = hash_from_request_string(request_string)
 end
 
+def sorted_vehicle_dict
+  # Create the structure for the sorted dictionary
+  sorted_dict = {}
+  (1..10).each { |x| sorted_dict["tier#{x}"] = {} }
+  # Pull the data
+  raw_list = list_of_vehicles
+  raw_list.each_key do |key|
+    if not sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']]
+    sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']] = [raw_list[key]['tank_id']]
+    else
+    sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']].push(raw_list[key]['tank_id'])
+    end
+  end
+  return sorted_dict
+end
+
 # The first two levels of the hash returned by the API are stripped, retaining
 # only the hash containing the tank data itself. Note that this includes 
 # removing the tank id number
@@ -327,7 +343,25 @@ def generate_tank_json_for_tank tank_id
   final_json << "\n},"
 
   # Begin Radios
-  final_json << %Q$\n"radios": {$
+  radios_string = %Q$\n"radios": {$
+  radios = tank['radios']
+  available_radios = []
+  radios.each do |r|
+    available_radios.push(radio_details(r['module_id']))
+  end
+  available_radios.each do |r|
+    r['stock'] = false
+    r['top'] = false
+  end
+  available_radios.sort! { |x,y| x['level'] <=> y['level'] }
+  available_radios.first['stock'] = true
+  available_radios.last['top'] = true
+  available_radios.each do |radio|
+    radio_string = radio_json(radio)
+    radios_string << radio_string 
+    radios_string << "," unless radio == available_radios.last
+  end
+  final_json << radios_string
 
   # End Radios
   final_json << "\n}"
@@ -346,6 +380,6 @@ end
 orig_std_out = STDOUT.clone
 STDOUT.reopen(File.open('output.json', 'w+'))
 
-puts generate_tank_json_for_tank 5137
+#puts generate_tank_json_for_tank 9249
 
 STDOUT.reopen(orig_std_out)
