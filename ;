@@ -38,6 +38,26 @@ def sorted_vehicle_dict
   return sorted_dict
 end
 
+def generate_json_for_tier num
+  tier = sorted_vehicle_dict["tier#{num}"]
+  tier_string = %Q$tier#{num}: {$
+  tier.each_key do |type|
+    type_string = %Q$"#{type}": {\n$
+    tier[type].each do |tank|
+      type_string << generate_tank_json_for_tank(tank)
+      type_string << "," unless tank == type.last
+    end
+    type_string << "}"
+    type_string << "," unless type == tier.last
+    tier_string << type_string
+  end
+  tier_string << "}"
+  tier_string << "," unless num == 10
+  return tier_string
+end
+
+puts generate_json_for_tier(1)
+
 # The first two levels of the hash returned by the API are stripped, retaining
 # only the hash containing the tank data itself. Note that this includes 
 # removing the tank id number
@@ -114,9 +134,9 @@ def gun_json gun
     \"name\": \"#{gun['name_i18n']}\",
     \"tier\": #{gun['level']},
     \"shells\": [
-    [#{gun['piercing_power'][0] || 0}, #{gun['damage'][0]}, 0, false],
-    [#{gun['piercing_power'][1] || 0}, #{gun['damage'][1] || 0}, 0, true],
-    [#{gun['piercing_power'][2] || 0}, #{gun['damage'][2] || 0}, 0, false]
+    [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false],
+    [#{gun['piercing_power'][1]}, #{gun['damage'][1]}, 0, true],
+    [#{gun['piercing_power'][0]}, #{gun['damage'][0]}, 0, false]
     ],
     \"rateOfFire\": #{gun['rate']},
     \"accuracy\": 0,
@@ -282,7 +302,7 @@ def generate_tank_json_for_tank tank_id
       guns_string = %Q$\n"availableGuns": {$
       turret_guns.each do |gun|
         guns_string << gun_json(gun)
-        guns_string << "," unless gun == turret_guns.last
+        guns_string << "," unless gun == available_guns.last
       end
       guns_string << "\n}"
       turret_string << guns_string
@@ -372,26 +392,6 @@ def generate_tank_json_for_tank tank_id
   return final_json
 end
 
-def generate_json_for_tier num
-  tier = sorted_vehicle_dict["tier#{num}"]
-  tier_string = %Q$"tier#{num}": {$
-  n = 0
-  tier.each_key do |type|
-    type_string = %Q$\n"#{type}": {\n$
-    tier[type].each do |tank|
-      type_string << generate_tank_json_for_tank(tank)
-      type_string << "," unless tank == tier[type].last
-    end
-    type_string << "\n}"
-    n += 1
-    type_string << "," unless n == tier.count
-    tier_string << type_string
-  end
-  tier_string << "\n}"
-  return tier_string
-end
-
-
 # Type 59 id:     49
 # Tiger II id:    5137
 # ISU-152 id:     7425
@@ -400,6 +400,6 @@ end
 orig_std_out = STDOUT.clone
 STDOUT.reopen(File.open('output.json', 'w+'))
 
-puts generate_json_for_tier(1)
+#puts generate_tank_json_for_tank 9249
 
 STDOUT.reopen(orig_std_out)
