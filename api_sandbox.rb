@@ -30,9 +30,9 @@ def sorted_vehicle_dict
   raw_list = list_of_vehicles
   raw_list.each_key do |key|
     if not sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']]
-    sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']] = [raw_list[key]['tank_id']]
+      sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']] = [raw_list[key]['tank_id']]
     else
-    sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']].push(raw_list[key]['tank_id'])
+      sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']].push(raw_list[key]['tank_id'])
     end
   end
   return sorted_dict
@@ -379,7 +379,14 @@ def generate_json_for_tier num
   tier.each_key do |type|
     type_string = %Q$\n"#{type}": {\n$
     tier[type].each do |tank|
-      type_string << generate_tank_json_for_tank(tank)
+      begin
+        tank_json = generate_tank_json_for_tank(tank)
+        type_string << tank_json
+      rescue 
+        File.open('failedtanks.txt', 'w') do |file|
+          file.write("#{tank['tank_id']}")
+        end
+      end
       type_string << "," unless tank == tier[type].last
     end
     type_string << "\n}"
@@ -400,6 +407,6 @@ end
 orig_std_out = STDOUT.clone
 STDOUT.reopen(File.open('output.json', 'w+'))
 
-puts generate_json_for_tier(1)
+puts generate_json_for_tier(3)
 
 STDOUT.reopen(orig_std_out)
