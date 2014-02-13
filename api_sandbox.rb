@@ -111,10 +111,10 @@ end
 def gun_json gun
   gun_string = "
     \"#{gun['name']}\" : {
-    \"name\": \"#{gun['name_i18n']}\",
-    \"tier\": #{gun['level']},
+    \"name\": \"#{gun['name_i18n'] || 'missing'}\",
+    \"tier\": #{gun['level'] || 0},
     \"shells\": [
-    [#{gun['piercing_power'][0] || 0}, #{gun['damage'][0]}, 0, false],
+    [#{gun['piercing_power'][0] || 0}, #{gun['damage'][0] || 0}, 0, false],
     [#{gun['piercing_power'][1] || 0}, #{gun['damage'][1] || 0}, 0, true],
     [#{gun['piercing_power'][2] || 0}, #{gun['damage'][2] || 0}, 0, false]
     ],
