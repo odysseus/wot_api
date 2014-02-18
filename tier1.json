@@ -1,0 +1,2575 @@
+{
+    "tier1": {
+        "mediumTank": {
+            "#gb_vehicles:GB01_Medium_Mark_I": {
+                "name": "Vickers Medium Mk. I",
+                "nation": "U.K.",
+                "tier": 1,
+                "type": "mediumTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 130,
+                "gunArc": 360,
+                "speedLimit": 24,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 11.75,
+                "hull": {
+                    "frontArmor": [
+                        6,
+                        5
+                    ],
+                    "sideArmor": [
+                        6,
+                        5
+                    ],
+                    "rearArmor": [
+                        6,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Turret_1_GB01_Medium_Mark_I": {
+                        "name": "Vickers Medium Mk. I",
+                        "tier": 1,
+                        "viewRange": 260,
+                        "traverseSpeed": 32,
+                        "frontArmor": [
+                            6,
+                            5
+                        ],
+                        "sideArmor": [
+                            6,
+                            5
+                        ],
+                        "rearArmor": [
+                            6,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_3pdr_gun_Hotchkiss": {
+                                "name": "OQF 3-pdr Gun Mk. I",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        38,
+                                        50,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        66,
+                                        50,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        23,
+                                        65,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_15mm_Machine_gun_BESA": {
+                                "name": "15 mm Machine Gun BESA",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        25,
+                                        9,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Turret_2_GB01_Medium_Mark_I": {
+                        "name": "Vickers Medium Mk. IA*",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 32,
+                        "frontArmor": [
+                            8,
+                            5
+                        ],
+                        "sideArmor": [
+                            8,
+                            5
+                        ],
+                        "rearArmor": [
+                            8,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 500,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_3pdr_gun_Hotchkiss": {
+                                "name": "OQF 3-pdr Gun Mk. I",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        38,
+                                        50,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        66,
+                                        50,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        23,
+                                        65,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_15mm_Machine_gun_BESA": {
+                                "name": "15 mm Machine Gun BESA",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        25,
+                                        9,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            },
+                            "QF_6_pounder_8cwt_Mk_II": {
+                                "name": "QF 6-pdr 8 cwt Mk. II",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        45,
+                                        70,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        57,
+                                        70,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        29,
+                                        95,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 3000,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "Vickers-Armstrong": {
+                        "name": "Armstrong Siddeley V8",
+                        "tier": 1,
+                        "horsepower": 90,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Vickers-Armstrong_MkII": {
+                        "name": "Armstrong Siddeley V8 SC",
+                        "tier": 1,
+                        "horsepower": 110,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 350
+                    }
+                },
+                "suspensions": {
+                    "Chassis_GB01_Medium_Mark_I": {
+                        "name": "Vickers Medium Mk. I",
+                        "tier": 1,
+                        "loadLimit": 12.2,
+                        "traverseSpeed": 26,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Chassis_GB01_Medium_Mark_I_2": {
+                        "name": "Vickers Medium Mk. IA*",
+                        "tier": 2,
+                        "loadLimit": 13.2,
+                        "traverseSpeed": 28,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 500
+                    }
+                },
+                "radios": {
+                    "Alarm_flags": {
+                        "name": "Signal flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "N14": {
+                        "name": "WS No. 14",
+                        "tier": 2,
+                        "signalRange": 250,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 180
+                    }
+                }
+            }
+        },
+        "lightTank": {
+            "#germany_vehicles:Ltraktor": {
+                "name": "Leichttraktor",
+                "nation": "Germany",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 110,
+                "gunArc": 360,
+                "speedLimit": 36,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 7.5,
+                "hull": {
+                    "frontArmor": [
+                        14,
+                        5
+                    ],
+                    "sideArmor": [
+                        12,
+                        5
+                    ],
+                    "rearArmor": [
+                        12,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Swedish_Bofors": {
+                        "name": "Leichttraktor",
+                        "tier": 1,
+                        "viewRange": 260,
+                        "traverseSpeed": 44,
+                        "frontArmor": [
+                            14,
+                            5
+                        ],
+                        "sideArmor": [
+                            12,
+                            5
+                        ],
+                        "rearArmor": [
+                            12,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_20mm_Breda": {
+                                "name": "2 cm Breda (i)",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        30,
+                                        11,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        47,
+                                        11,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 112.63,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1970,
+                                "autoloader": false
+                            },
+                            "_37mm_KwK_L46": {
+                                "name": "3,7 cm Kw.K. 36 L/46.5",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        40,
+                                        36,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        74,
+                                        36,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        42,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Verbesserteturm": {
+                        "name": "L.K.A. 2",
+                        "tier": 2,
+                        "viewRange": 310,
+                        "traverseSpeed": 39,
+                        "frontArmor": [
+                            14,
+                            5
+                        ],
+                        "sideArmor": [
+                            13,
+                            5
+                        ],
+                        "rearArmor": [
+                            13,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 280,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_20mm_Breda": {
+                                "name": "2 cm Breda (i)",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        30,
+                                        11,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        47,
+                                        11,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 112.63,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1970,
+                                "autoloader": false
+                            },
+                            "_37mm_KwK_L46": {
+                                "name": "3,7 cm Kw.K. 36 L/46.5",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        40,
+                                        36,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        74,
+                                        36,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        42,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_20mm_KwK_38_L55": {
+                                "name": "2 cm Kw.K. 38",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        11,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        11,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 278.76,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 1920,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "Krupp_M301": {
+                        "name": "Krupp M301",
+                        "tier": 1,
+                        "horsepower": 51,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Maybach_NL38TR": {
+                        "name": "Maybach HL 38 TR",
+                        "tier": 2,
+                        "horsepower": 100,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 700
+                    },
+                    "Krupp_M311": {
+                        "name": "Krupp M311",
+                        "tier": 2,
+                        "horsepower": 85,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 400
+                    }
+                },
+                "suspensions": {
+                    "Leichtertaktorketten": {
+                        "name": "Leichttraktor",
+                        "tier": 1,
+                        "loadLimit": 9.2,
+                        "traverseSpeed": 36,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "LeichtertaktorkettenB": {
+                        "name": "Leichttraktor verstärkteketten",
+                        "tier": 2,
+                        "loadLimit": 9.5,
+                        "traverseSpeed": 40,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 540
+                    }
+                },
+                "radios": {
+                    "Die_Signalfahnen": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "FuG2": {
+                        "name": "FuG 2",
+                        "tier": 2,
+                        "signalRange": 265,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 180
+                    }
+                }
+            },
+            "#france_vehicles:RenaultFT": {
+                "name": "Renault FT",
+                "nation": "France",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 105,
+                "gunArc": 360,
+                "speedLimit": 21,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 4.69,
+                "hull": {
+                    "frontArmor": [
+                        16,
+                        5
+                    ],
+                    "sideArmor": [
+                        16,
+                        5
+                    ],
+                    "rearArmor": [
+                        16,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Turret_1_RenaultFT": {
+                        "name": "Renault FT Omnibus",
+                        "tier": 1,
+                        "viewRange": 250,
+                        "traverseSpeed": 38,
+                        "frontArmor": [
+                            16,
+                            5
+                        ],
+                        "sideArmor": [
+                            16,
+                            5
+                        ],
+                        "rearArmor": [
+                            14,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_13.2mm_Hotchkiss_mle._1930": {
+                                "name": "13.2 mm Hotchkiss mle. 1930",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1500,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Turret_2_RenaultFT": {
+                        "name": "Renault FT Berliet",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 34,
+                        "frontArmor": [
+                            22,
+                            5
+                        ],
+                        "sideArmor": [
+                            22,
+                            5
+                        ],
+                        "rearArmor": [
+                            16,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 240,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_13.2mm_Hotchkiss_mle._1930": {
+                                "name": "13.2 mm Hotchkiss mle. 1930",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1500,
+                                "autoloader": false
+                            },
+                            "_25mm_Canon_Raccourci_Mle.1934": {
+                                "name": "25 mm Canon Raccourci mle. 1934",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        46,
+                                        27,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        68,
+                                        27,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 32.81,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 2320,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "Renault": {
+                        "name": "Renault",
+                        "tier": 1,
+                        "horsepower": 39,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Franklin": {
+                        "name": "#france_vehicles:Franklin",
+                        "tier": 1,
+                        "horsepower": 100,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 330
+                    },
+                    "Renault_M26_27": {
+                        "name": "Renault M26/27",
+                        "tier": 1,
+                        "horsepower": 45,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 300
+                    }
+                },
+                "suspensions": {
+                    "Chassis_RenaultFT": {
+                        "name": "M17",
+                        "tier": 1,
+                        "loadLimit": 4.89,
+                        "traverseSpeed": 28,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Chassis_RenaultFT2": {
+                        "name": "M26/27",
+                        "tier": 2,
+                        "loadLimit": 6.8,
+                        "traverseSpeed": 30,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 560
+                    }
+                },
+                "radios": {
+                    "Fanions_de_signaux": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "ER_52": {
+                        "name": "ER 52",
+                        "tier": 3,
+                        "signalRange": 300,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 600
+                    }
+                }
+            },
+            "#china_vehicles:Ch06_Renault_NC31": {
+                "name": "Renault NC-31",
+                "nation": "China",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 100,
+                "gunArc": 360,
+                "speedLimit": 25,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 6.47,
+                "hull": {
+                    "frontArmor": [
+                        16,
+                        5
+                    ],
+                    "sideArmor": [
+                        16,
+                        5
+                    ],
+                    "rearArmor": [
+                        16,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Turret_1_Ch06_Renault_NC31": {
+                        "name": "FT-17",
+                        "tier": 1,
+                        "viewRange": 250,
+                        "traverseSpeed": 38,
+                        "frontArmor": [
+                            16,
+                            5
+                        ],
+                        "sideArmor": [
+                            16,
+                            5
+                        ],
+                        "rearArmor": [
+                            14,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_13.2mm_Hotchkiss_mle._1930": {
+                                "name": "13.2 mm Hotchkiss mle. 1930",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1600,
+                                "autoloader": false
+                            },
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Turret_2_Ch06_Renault_NC31": {
+                        "name": "FT-18",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 34,
+                        "frontArmor": [
+                            22,
+                            5
+                        ],
+                        "sideArmor": [
+                            22,
+                            5
+                        ],
+                        "rearArmor": [
+                            16,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 500,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_13.2mm_Hotchkiss_mle._1930": {
+                                "name": "13.2 mm Hotchkiss mle. 1930",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.16,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1600,
+                                "autoloader": false
+                            },
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_37mm_KwK_L46": {
+                                "name": "37 mm KwK 36 L/46.5",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        40,
+                                        36,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        74,
+                                        36,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        42,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "_Renault_NC": {
+                        "name": "Renault NC-2",
+                        "tier": 1,
+                        "horsepower": 75,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 370
+                    },
+                    "_Renault_M26_27": {
+                        "name": "Renault M26/27",
+                        "tier": 1,
+                        "horsepower": 45,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "_Renault_62CV": {
+                        "name": "Renault 62CV",
+                        "tier": 1,
+                        "horsepower": 62,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 350
+                    }
+                },
+                "suspensions": {
+                    "Chassis_Ch06_Renault_NC31": {
+                        "name": "M24/25",
+                        "tier": 1,
+                        "loadLimit": 6.6,
+                        "traverseSpeed": 36,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Chassis_Ch06_Renault_NC31_2": {
+                        "name": "M26/27",
+                        "tier": 2,
+                        "loadLimit": 8.6,
+                        "traverseSpeed": 38,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 450
+                    }
+                },
+                "radios": {
+                    "Fanions_de_signaux": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "ER_52": {
+                        "name": "ER 52",
+                        "tier": 3,
+                        "signalRange": 300,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 600
+                    }
+                }
+            },
+            "#japan_vehicles:NC27": {
+                "name": "Renault Otsu",
+                "nation": "Japan",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 100,
+                "gunArc": 360,
+                "speedLimit": 23,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 8.01,
+                "hull": {
+                    "frontArmor": [
+                        30,
+                        5
+                    ],
+                    "sideArmor": [
+                        30,
+                        5
+                    ],
+                    "rearArmor": [
+                        22,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Turret_1_NC27": {
+                        "name": "Renault Kou",
+                        "tier": 1,
+                        "viewRange": 250,
+                        "traverseSpeed": 24,
+                        "frontArmor": [
+                            18,
+                            5
+                        ],
+                        "sideArmor": [
+                            18,
+                            5
+                        ],
+                        "rearArmor": [
+                            16,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_13.2mm_Type93": {
+                                "name": "13 mm Autocannon Type Ho",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.46,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1500,
+                                "autoloader": false
+                            },
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Turret_2_NC27": {
+                        "name": "Renault Otsu",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 24,
+                        "frontArmor": [
+                            20,
+                            5
+                        ],
+                        "sideArmor": [
+                            20,
+                            5
+                        ],
+                        "rearArmor": [
+                            20,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 550,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_37mm_Type11": {
+                                "name": "37 mm Infantry Gun Type 11",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        22,
+                                        45,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        32,
+                                        45,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        55,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 24,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1800,
+                                "autoloader": false
+                            },
+                            "_13.2mm_Type93": {
+                                "name": "13 mm Autocannon Type Ho",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        23,
+                                        8,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        36,
+                                        8,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 138.46,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1500,
+                                "autoloader": false
+                            },
+                            "_37mm_APX_SA18": {
+                                "name": "37 mm APX SA18",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        29,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        46,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 23.86,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_37mm_Sogekiho": {
+                                "name": "37 mm Sogekihou",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        32,
+                                        45,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        48,
+                                        45,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        18,
+                                        55,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 24,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "_62CV": {
+                        "name": "Renault L4",
+                        "tier": 1,
+                        "horsepower": 60,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Mitsubishi": {
+                        "name": "Mitsubishi A475VD",
+                        "tier": 2,
+                        "horsepower": 75,
+                        "fireChance": 0.15,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 450
+                    }
+                },
+                "suspensions": {
+                    "Chassis_NC27": {
+                        "name": "Renault NC-27",
+                        "tier": 1,
+                        "loadLimit": 8.5,
+                        "traverseSpeed": 34,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Chassis_NC27_2": {
+                        "name": "Renault Otsu",
+                        "tier": 1,
+                        "loadLimit": 10.5,
+                        "traverseSpeed": 36,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 330
+                    }
+                },
+                "radios": {
+                    "Alarm_flags": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "_Type94_Otsu": {
+                        "name": "Type 94 Mk. 4 Otsu",
+                        "tier": 3,
+                        "signalRange": 300,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 600
+                    },
+                    "_Type94_Hei": {
+                        "name": "Type 94 Mk. 4 Hei",
+                        "tier": 4,
+                        "signalRange": 350,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 2350
+                    }
+                }
+            },
+            "#ussr_vehicles:MS-1": {
+                "name": "MS-1",
+                "nation": "U.S.S.R.",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 90,
+                "gunArc": 360,
+                "speedLimit": 32,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 4.69,
+                "hull": {
+                    "frontArmor": [
+                        18,
+                        5
+                    ],
+                    "sideArmor": [
+                        16,
+                        5
+                    ],
+                    "rearArmor": [
+                        16,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "T-18_Standart": {
+                        "name": "MS-1 mod. 1927",
+                        "tier": 1,
+                        "viewRange": 240,
+                        "traverseSpeed": 39,
+                        "frontArmor": [
+                            18,
+                            5
+                        ],
+                        "sideArmor": [
+                            16,
+                            5
+                        ],
+                        "rearArmor": [
+                            16,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_20mm_TNSH": {
+                                "name": "20 mm TNSh",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        28,
+                                        10,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        39,
+                                        10,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 119.15,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 2380,
+                                "autoloader": false
+                            },
+                            "_37mm_B-3": {
+                                "name": "37 mm B-3",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        40,
+                                        36,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        64,
+                                        36,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        40,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1950,
+                                "autoloader": false
+                            },
+                            "_37mm_Gochkins": {
+                                "name": "37 mm Hotchkiss",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        34,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        44,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_23mm_VJA": {
+                                "name": "23 mm VJa",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        30,
+                                        12,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        42,
+                                        12,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 225,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 2750,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "T-18_mod": {
+                        "name": "MS-1 mod. 1930",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 35,
+                        "frontArmor": [
+                            18,
+                            5
+                        ],
+                        "sideArmor": [
+                            16,
+                            5
+                        ],
+                        "rearArmor": [
+                            16,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 250,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_20mm_TNSH": {
+                                "name": "20 mm TNSh",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        28,
+                                        10,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        39,
+                                        10,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 119.15,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 2380,
+                                "autoloader": false
+                            },
+                            "_37mm_B-3": {
+                                "name": "37 mm B-3",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        40,
+                                        36,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        64,
+                                        36,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        40,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1950,
+                                "autoloader": false
+                            },
+                            "_37mm_Gochkins": {
+                                "name": "37 mm Hotchkiss",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        34,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        44,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 26.25,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_23mm_VJA": {
+                                "name": "23 mm VJa",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        30,
+                                        12,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        42,
+                                        12,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 225,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 2750,
+                                "autoloader": false
+                            },
+                            "_45mm_mod_1932": {
+                                "name": "45 mm mod. 1932",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        51,
+                                        47,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        88,
+                                        47,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        23,
+                                        62,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 21,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 2000,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "AMO-3": {
+                        "name": "AMO-3",
+                        "tier": 1,
+                        "horsepower": 70,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 340
+                    },
+                    "MS-1": {
+                        "name": "MS-1",
+                        "tier": 1,
+                        "horsepower": 43,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "GAZ-M1": {
+                        "name": "GAZ-M1",
+                        "tier": 1,
+                        "horsepower": 55,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 310
+                    }
+                },
+                "suspensions": {
+                    "T-18": {
+                        "name": "MS-1",
+                        "tier": 1,
+                        "loadLimit": 4.89,
+                        "traverseSpeed": 34,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "T-18Bis": {
+                        "name": "T-18",
+                        "tier": 2,
+                        "loadLimit": 6.5,
+                        "traverseSpeed": 38,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 480
+                    }
+                },
+                "radios": {
+                    "Alarm_flags": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "_71-TK-1": {
+                        "name": "71-TK-1",
+                        "tier": 2,
+                        "signalRange": 265,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 180
+                    }
+                }
+            },
+            "#usa_vehicles:T1_Cunningham": {
+                "name": "T1 Cunningham",
+                "nation": "U.S.A.",
+                "tier": 1,
+                "type": "lightTank",
+                "premiumTank": false,
+                "turreted": true,
+                "experienceNeeded": 0,
+                "cost": 0,
+                "baseHitpoints": 105,
+                "gunArc": 360,
+                "speedLimit": 41,
+                "camoValue": 0,
+                "crewLevel": 100,
+                "topWeight": 7.21,
+                "hull": {
+                    "frontArmor": [
+                        10,
+                        5
+                    ],
+                    "sideArmor": [
+                        10,
+                        5
+                    ],
+                    "rearArmor": [
+                        10,
+                        5
+                    ]
+                },
+                "turrets": {
+                    "Cunningham_D1": {
+                        "name": "Cunningham D1",
+                        "tier": 1,
+                        "viewRange": 240,
+                        "traverseSpeed": 39,
+                        "frontArmor": [
+                            10,
+                            5
+                        ],
+                        "sideArmor": [
+                            10,
+                            5
+                        ],
+                        "rearArmor": [
+                            10,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_37mm_semiautomatic_gun_M1924": {
+                                "name": "37 mm Semiautomatic Gun M1924",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        33,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        53,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 33.87,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            },
+                            "_37mm_Gun_M1916": {
+                                "name": "37 mm Gun M1916",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        28,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        45,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 21.88,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            }
+                        }
+                    },
+                    "Cunningham_D2": {
+                        "name": "Cunningham D2",
+                        "tier": 2,
+                        "viewRange": 280,
+                        "traverseSpeed": 35,
+                        "frontArmor": [
+                            10,
+                            5
+                        ],
+                        "sideArmor": [
+                            10,
+                            5
+                        ],
+                        "rearArmor": [
+                            10,
+                            5
+                        ],
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 200,
+                        "additionalHP": 0,
+                        "availableGuns": {
+                            "_37mm_semiautomatic_gun_M1924": {
+                                "name": "37 mm Semiautomatic Gun M1924",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        33,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        53,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 33.87,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": true,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 1900,
+                                "autoloader": false
+                            },
+                            "_37mm_Gun_M1916": {
+                                "name": "37 mm Gun M1916",
+                                "tier": 1,
+                                "shells": [
+                                    [
+                                        28,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        45,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 21.88,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 0,
+                                "autoloader": false
+                            },
+                            "_20mm_Hispano_Suiza_Birgikt_gun": {
+                                "name": "20 mm Hispano-Suiza Birkigt Gun",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        30,
+                                        12,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        41,
+                                        12,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 409.09,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": false,
+                                "experienceNeeded": 0,
+                                "cost": 2600,
+                                "autoloader": false
+                            },
+                            "_37mm_Browning_semiautomatic_gun": {
+                                "name": "37 mm Browning Semiautomatic Gun",
+                                "tier": 2,
+                                "shells": [
+                                    [
+                                        39,
+                                        30,
+                                        0,
+                                        false
+                                    ],
+                                    [
+                                        63,
+                                        30,
+                                        0,
+                                        true
+                                    ],
+                                    [
+                                        19,
+                                        36,
+                                        0,
+                                        false
+                                    ]
+                                ],
+                                "rateOfFire": 33.87,
+                                "accuracy": 0,
+                                "aimTime": 0,
+                                "gunDepression": 0,
+                                "gunElevation": 0,
+                                "weight": 0,
+                                "stockModule": false,
+                                "topModule": true,
+                                "experienceNeeded": 0,
+                                "cost": 2200,
+                                "autoloader": false
+                            }
+                        }
+                    }
+                },
+                "engines": {
+                    "Cunningham": {
+                        "name": "Cunningham V-type",
+                        "tier": 1,
+                        "horsepower": 110,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Cunningham_type_3": {
+                        "name": "Cunningham V8",
+                        "tier": 2,
+                        "horsepower": 132,
+                        "fireChance": 0.2,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 650
+                    }
+                },
+                "suspensions": {
+                    "Cunningham_E1": {
+                        "name": "Cunningham E1",
+                        "tier": 1,
+                        "loadLimit": 7.6,
+                        "traverseSpeed": 34,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "Cunningham_E2": {
+                        "name": "Cunningham E2",
+                        "tier": 2,
+                        "loadLimit": 8.3,
+                        "traverseSpeed": 38,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 500
+                    }
+                },
+                "radios": {
+                    "Alarm_flags": {
+                        "name": "Signal Flags",
+                        "tier": 1,
+                        "signalRange": 90,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": false,
+                        "experienceNeeded": 0,
+                        "cost": 0
+                    },
+                    "SCR_200": {
+                        "name": "SCR 200",
+                        "tier": 2,
+                        "signalRange": 265,
+                        "weight": 0,
+                        "stockModule": false,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 180
+                    }
+                }
+            }
+        }
+    }
+}

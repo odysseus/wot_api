@@ -407,6 +407,6 @@ end
 orig_std_out = STDOUT.clone
 STDOUT.reopen(File.open('output.json', 'w+'))
 
-puts generate_json_for_tier(3)
+puts generate_json_for_tier(10)
 
 STDOUT.reopen(orig_std_out)
