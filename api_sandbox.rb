@@ -27,7 +27,7 @@ def sorted_vehicle_dict
   sorted_dict = {}
   (1..10).each { |x| sorted_dict["tier#{x}"] = {} }
   # Pull the data
-  raw_list = list_of_vehicles
+  raw_list = $list_of_vehicles
   raw_list.each_key do |key|
     if not sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']]
       sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']] = [raw_list[key]['tank_id']]
@@ -37,6 +37,9 @@ def sorted_vehicle_dict
   end
   return sorted_dict
 end
+
+$list_of_vehicles = list_of_vehicles
+$sorted_vehicle_dict = sorted_vehicle_dict
 
 # The first two levels of the hash returned by the API are stripped, retaining
 # only the hash containing the tank data itself. Note that this includes 
@@ -182,7 +185,7 @@ def tank_json tank
   # Does the tank have a turret?
   has_turret = tank['turrets'].count > 0
   # If the tank is a premium tank, price is in gold, else price in credits
-  if tank['is_gift']
+  if tank['premium']
     tank_cost = tank['price_gold']
   else
     tank_cost = tank['price_credit']
@@ -197,10 +200,10 @@ def tank_json tank
   tank_json = "
   \"#{tank['name']}\": {
     \"name\": \"#{tank['name_i18n']}\",
-    \"nation\": \"#{tank['nation_i18n']}\",
+    \"nation\": \"#{tank['nation']}\",
     \"tier\": #{tank['level']},
     \"type\": \"#{tank['type']}\",
-    \"premiumTank\": #{tank['is_gift']},
+    \"premiumTank\": #{tank['premium']},
     \"turreted\": #{has_turret},
     \"experienceNeeded\": #{tank['price_xp']},
     \"cost\": #{tank_cost},
@@ -221,6 +224,8 @@ end
 # string conversions from the API data to the JSON representation used by the app
 def generate_tank_json_for_tank tank_id
   tank = vehicle_details(tank_id)
+  list = $list_of_vehicles
+  tank['premium'] = list["#{tank_id}"]["is_premium"]
 
   # Does the tank have a turret?
   has_turret = tank['turrets'].count > 0
@@ -246,6 +251,8 @@ def generate_tank_json_for_tank tank_id
 
   # First deal with Tank Destroyers, by adding the array of guns to the hull
   if tank['turrets'].count == 0
+    view_range_string = %Q$,\n"viewRange": #{tank['circular_vision_radius']}$
+    final_json << view_range_string
     guns_string = %Q$"availableGuns": {$
     available_guns.each do |gun|
       guns_string << gun_json(gun)
@@ -373,7 +380,7 @@ def generate_tank_json_for_tank tank_id
 end
 
 def generate_json_for_tier num
-  tier = sorted_vehicle_dict["tier#{num}"]
+  tier = $sorted_vehicle_dict["tier#{num}"]
   tier_string = %Q$"tier#{num}": {$
   n = 0
   tier.each_key do |type|
@@ -395,6 +402,8 @@ def generate_json_for_tier num
     tier_string << type_string
   end
   tier_string << "\n}"
+  tier_string.gsub!( /Fu\.Spr\.Ger\. "a"/, "Fu.Spr.Ger. \\\"a\\\"")
+  tier_string.gsub!( /Fu\.Spr\.Ger\. "f"/, "Fu.Spr.Ger. \\\"f\\\"")
   return tier_string
 end
 
@@ -407,6 +416,6 @@ end
 orig_std_out = STDOUT.clone
 STDOUT.reopen(File.open('output.json', 'w+'))
 
-puts generate_json_for_tier(10)
+puts generate_json_for_tier(8)
 
 STDOUT.reopen(orig_std_out)
