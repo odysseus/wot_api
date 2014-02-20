@@ -3,7 +3,7 @@
         "mediumTank": {
             "#germany_vehicles:PzV": {
                 "name": "Panther",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -377,7 +377,7 @@
             },
             "#germany_vehicles:VK3002DB": {
                 "name": "VK 30.02 (D)",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -762,7 +762,7 @@
             },
             "#ussr_vehicles:KV-13": {
                 "name": "KV-13",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -1161,7 +1161,7 @@
             },
             "#japan_vehicles:Chi_Ri": {
                 "name": "Type 5 Chi-Ri",
-                "nation": "Japan",
+                "nation": "japan",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -1510,7 +1510,7 @@
             },
             "#ussr_vehicles:T-43": {
                 "name": "T-43",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -1850,7 +1850,7 @@
             },
             "#gb_vehicles:GB22_Comet": {
                 "name": "Comet",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -2259,7 +2259,7 @@
             },
             "#china_vehicles:Ch04_T34_1": {
                 "name": "T-34-1",
-                "nation": "China",
+                "nation": "china",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -2599,7 +2599,7 @@
             },
             "#usa_vehicles:T20": {
                 "name": "T20",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -2963,13 +2963,13 @@
             },
             "#germany_vehicles:Panther_M10": {
                 "name": "Panther/M10",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "mediumTank",
-                "premiumTank": false,
+                "premiumTank": true,
                 "turreted": true,
                 "experienceNeeded": 0,
-                "cost": 0,
+                "cost": 5750,
                 "baseHitpoints": 1300,
                 "gunArc": 360,
                 "speedLimit": 46,
@@ -3094,7 +3094,7 @@
             },
             "#ussr_vehicles:A44": {
                 "name": "A-44",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -3530,7 +3530,7 @@
         "lightTank": {
             "#france_vehicles:AMX_13_75": {
                 "name": "AMX 13 75",
-                "nation": "France",
+                "nation": "france",
                 "tier": 7,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -3739,7 +3739,7 @@
             },
             "#china_vehicles:Ch02_Type62": {
                 "name": "Type 62",
-                "nation": "China",
+                "nation": "china",
                 "tier": 7,
                 "type": "lightTank",
                 "premiumTank": true,
@@ -3870,7 +3870,7 @@
             },
             "#germany_vehicles:Auf_Panther": {
                 "name": "Aufklärungspanzer Panther",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -4220,7 +4220,7 @@
             },
             "#usa_vehicles:T71": {
                 "name": "T71",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -4418,7 +4418,7 @@
             },
             "#china_vehicles:Ch16_WZ_131": {
                 "name": "WZ-131",
-                "nation": "China",
+                "nation": "china",
                 "tier": 7,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -4819,7 +4819,7 @@
         "AT-SPG": {
             "#ussr_vehicles:SU-152": {
                 "name": "SU-152",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -4845,6 +4845,7 @@
                         60,
                         5
                     ],
+                    "viewRange": 330,
                     "availableGuns": {
                         "_152mm_ML-20_mod_1937": {
                             "name": "152 mm ML-20 mod. 1931/37",
@@ -5036,7 +5037,7 @@
             },
             "#ussr_vehicles:SU100M1": {
                 "name": "SU-100M1",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -5062,6 +5063,7 @@
                         45,
                         5
                     ],
+                    "viewRange": 360,
                     "availableGuns": {
                         "_100mm_LB-1S": {
                             "name": "100 mm LB-1C",
@@ -5219,13 +5221,13 @@
             },
             "#gb_vehicles:GB71_AT_15A": {
                 "name": "AT 15A",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 7,
                 "type": "AT-SPG",
-                "premiumTank": false,
+                "premiumTank": true,
                 "turreted": false,
                 "experienceNeeded": 0,
-                "cost": 0,
+                "cost": 6500,
                 "baseHitpoints": 850,
                 "gunArc": 360,
                 "speedLimit": 20,
@@ -5245,6 +5247,7 @@
                         101,
                         5
                     ],
+                    "viewRange": 350,
                     "availableGuns": {
                         "_17pdr_OQF_AT": {
                             "name": "OQF 17-pdr AT Gun Mk. VII",
@@ -5324,7 +5327,7 @@
             },
             "#gb_vehicles:GB75_AT7": {
                 "name": "AT 7",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -5350,6 +5353,7 @@
                         101,
                         5
                     ],
+                    "viewRange": 350,
                     "availableGuns": {
                         "QF_6_pounder_Mk_V_AT": {
                             "name": "QF 6-pdr AT Gun Mk. V",
@@ -5587,7 +5591,7 @@
             },
             "#france_vehicles:AMX_AC_Mle1946": {
                 "name": "AMX AC mle. 46",
-                "nation": "France",
+                "nation": "france",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -5613,6 +5617,7 @@
                         40,
                         5
                     ],
+                    "viewRange": 350,
                     "availableGuns": {
                         "_90mm_canon_DCA_30_CA": {
                             "name": "90 mm AC canon DCA 30",
@@ -5805,7 +5810,7 @@
             },
             "#usa_vehicles:T25_AT": {
                 "name": "T25 AT",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -5831,6 +5836,7 @@
                         38,
                         5
                     ],
+                    "viewRange": 350,
                     "availableGuns": {
                         "_90mm_AT_Gun_M3": {
                             "name": "90 mm AT Gun M3",
@@ -6012,7 +6018,7 @@
             },
             "#germany_vehicles:Sturer_Emil": {
                 "name": "Pz.Sfl. V",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -6038,6 +6044,7 @@
                         30,
                         5
                     ],
+                    "viewRange": 400,
                     "availableGuns": {
                         "_105mm_K18_L52_R": {
                             "name": "10,5 cm Kanone 18",
@@ -6194,13 +6201,13 @@
             },
             "#germany_vehicles:E-25": {
                 "name": "E 25",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "AT-SPG",
-                "premiumTank": false,
+                "premiumTank": true,
                 "turreted": false,
                 "experienceNeeded": 0,
-                "cost": 0,
+                "cost": 6700,
                 "baseHitpoints": 830,
                 "gunArc": 360,
                 "speedLimit": 65,
@@ -6220,6 +6227,7 @@
                         30,
                         5
                     ],
+                    "viewRange": 360,
                     "availableGuns": {
                         "_75mm_StuK42_L70A": {
                             "name": "7,5 cm Pak 42 L/70",
@@ -6299,13 +6307,13 @@
             },
             "#ussr_vehicles:SU122_44": {
                 "name": "SU-122-44",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "AT-SPG",
-                "premiumTank": false,
+                "premiumTank": true,
                 "turreted": false,
                 "experienceNeeded": 0,
-                "cost": 0,
+                "cost": 6750,
                 "baseHitpoints": 840,
                 "gunArc": 360,
                 "speedLimit": 47.5,
@@ -6325,6 +6333,7 @@
                         45,
                         5
                     ],
+                    "viewRange": 330,
                     "availableGuns": {
                         "_122-mm_D-25S_with_wedges_shutter_A": {
                             "name": "122 mm D-25S",
@@ -6404,7 +6413,7 @@
             },
             "#germany_vehicles:JagdPanther": {
                 "name": "Jagdpanther",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -6430,6 +6439,7 @@
                         40,
                         5
                     ],
+                    "viewRange": 370,
                     "availableGuns": {
                         "_75mm_StuK42_L70": {
                             "name": "7,5 cm Pak 42 L/70",
@@ -6656,7 +6666,7 @@
             },
             "#usa_vehicles:T25_2": {
                 "name": "T25/2",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "AT-SPG",
                 "premiumTank": false,
@@ -6917,7 +6927,7 @@
         "heavyTank": {
             "#gb_vehicles:GB10_Black_Prince": {
                 "name": "Black Prince",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -7125,7 +7135,7 @@
             },
             "#ussr_vehicles:IS": {
                 "name": "IS",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -7559,7 +7569,7 @@
             },
             "#usa_vehicles:T29": {
                 "name": "T29",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -7934,7 +7944,7 @@
             },
             "#ussr_vehicles:KV-3": {
                 "name": "KV-3",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -8434,7 +8444,7 @@
             },
             "#france_vehicles:AMX_M4_1945": {
                 "name": "AMX M4 mle. 45",
-                "nation": "France",
+                "nation": "france",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -8844,7 +8854,7 @@
             },
             "#china_vehicles:Ch10_IS2": {
                 "name": "IS-2",
-                "nation": "China",
+                "nation": "china",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -9229,7 +9239,7 @@
             },
             "#germany_vehicles:PzVI_Tiger_P": {
                 "name": "Tiger (P)",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -9674,7 +9684,7 @@
             },
             "#germany_vehicles:PzVI": {
                 "name": "Tiger I",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "heavyTank",
                 "premiumTank": false,
@@ -10085,7 +10095,7 @@
         "SPG": {
             "#ussr_vehicles:S-51": {
                 "name": "S-51",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -10111,6 +10121,7 @@
                         60,
                         5
                     ],
+                    "viewRange": 360,
                     "availableGuns": {
                         "_152mm_BR-2": {
                             "name": "152 mm BR-2",
@@ -10268,7 +10279,7 @@
             },
             "#gb_vehicles:GB29_Crusader_5inch": {
                 "name": "Crusader 5.5-in. SP",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -10294,6 +10305,7 @@
                         20,
                         5
                     ],
+                    "viewRange": 370,
                     "availableGuns": {
                         "_4.5inch_SPG_Howitzer": {
                             "name": "Q.F. 4.5-in. Howitzer",
@@ -10460,7 +10472,7 @@
             },
             "#ussr_vehicles:SU14_1": {
                 "name": "SU-14-1",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -10486,6 +10498,7 @@
                         10,
                         5
                     ],
+                    "viewRange": 360,
                     "availableGuns": {
                         "_152mm_howitzer_ML-20_mod_1931": {
                             "name": "152 mm Howitzer ML-20 mod. 1931",
@@ -10667,7 +10680,7 @@
             },
             "#france_vehicles:Lorraine155_50": {
                 "name": "Lorraine 155 mle. 50",
-                "nation": "France",
+                "nation": "france",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -10693,6 +10706,7 @@
                         20,
                         5
                     ],
+                    "viewRange": 350,
                     "availableGuns": {
                         "Canon_de_155mm_de_33_calibres": {
                             "name": "Canon de 155 mm de 33 calibres",
@@ -10839,7 +10853,7 @@
             },
             "#germany_vehicles:G_Panther": {
                 "name": "G.W. Panther",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -10865,6 +10879,7 @@
                         20,
                         5
                     ],
+                    "viewRange": 370,
                     "availableGuns": {
                         "_150mm_sFH18_L30": {
                             "name": "15 cm s.F.H. 18 L/29.5",
@@ -11021,7 +11036,7 @@
             },
             "#usa_vehicles:M12": {
                 "name": "M12",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 7,
                 "type": "SPG",
                 "premiumTank": false,
@@ -11047,6 +11062,7 @@
                         19,
                         5
                     ],
+                    "viewRange": 370,
                     "availableGuns": {
                         "_155mm_Gun_M1918M1": {
                             "name": "155 mm Gun M1918M1",

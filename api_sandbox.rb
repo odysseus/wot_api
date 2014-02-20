@@ -38,9 +38,6 @@ def sorted_vehicle_dict
   return sorted_dict
 end
 
-$list_of_vehicles = list_of_vehicles
-$sorted_vehicle_dict = sorted_vehicle_dict
-
 # The first two levels of the hash returned by the API are stripped, retaining
 # only the hash containing the tank data itself. Note that this includes 
 # removing the tank id number
@@ -404,18 +401,31 @@ def generate_json_for_tier num
   tier_string << "\n}"
   tier_string.gsub!( /Fu\.Spr\.Ger\. "a"/, "Fu.Spr.Ger. \\\"a\\\"")
   tier_string.gsub!( /Fu\.Spr\.Ger\. "f"/, "Fu.Spr.Ger. \\\"f\\\"")
+  tier_string.gsub!( /Fu\.Spr\.Ger\. "d"/, "Fu.Spr.Ger. \\\"d\\\"")
   return tier_string
 end
 
+def write_json_for_tier num
+  File.open("tier#{num}.json", 'w') do |file|
+    file.write("{\n")
+    file.write(generate_json_for_tier(num))
+    file.write("\n}")
+  end
+  puts "Finished writing tier #{num}: #{Time.now}"
+end
+
+def generate_all
+  (1..10).each do |n|
+    write_json_for_tier(n)
+  end
+end
 
 # Type 59 id:     49
 # Tiger II id:    5137
 # ISU-152 id:     7425
 # Hetzer id:      1809
 
-orig_std_out = STDOUT.clone
-STDOUT.reopen(File.open('output.json', 'w+'))
+$list_of_vehicles = list_of_vehicles
+$sorted_vehicle_dict = sorted_vehicle_dict
 
-puts generate_json_for_tier(8)
-
-STDOUT.reopen(orig_std_out)
+write_json_for_tier(1)

@@ -3,7 +3,7 @@
         "mediumTank": {
             "#gb_vehicles:GB01_Medium_Mark_I": {
                 "name": "Vickers Medium Mk. I",
-                "nation": "U.K.",
+                "nation": "uk",
                 "tier": 1,
                 "type": "mediumTank",
                 "premiumTank": false,
@@ -334,7 +334,7 @@
         "lightTank": {
             "#germany_vehicles:Ltraktor": {
                 "name": "Leichttraktor",
-                "nation": "Germany",
+                "nation": "germany",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -674,7 +674,7 @@
             },
             "#france_vehicles:RenaultFT": {
                 "name": "Renault FT",
-                "nation": "France",
+                "nation": "france",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -1014,7 +1014,7 @@
             },
             "#china_vehicles:Ch06_Renault_NC31": {
                 "name": "Renault NC-31",
-                "nation": "China",
+                "nation": "china",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -1354,7 +1354,7 @@
             },
             "#japan_vehicles:NC27": {
                 "name": "Renault Otsu",
-                "nation": "Japan",
+                "nation": "japan",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -1728,7 +1728,7 @@
             },
             "#ussr_vehicles:MS-1": {
                 "name": "MS-1",
-                "nation": "U.S.S.R.",
+                "nation": "ussr",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
@@ -2208,7 +2208,7 @@
             },
             "#usa_vehicles:T1_Cunningham": {
                 "name": "T1 Cunningham",
-                "nation": "U.S.A.",
+                "nation": "usa",
                 "tier": 1,
                 "type": "lightTank",
                 "premiumTank": false,
