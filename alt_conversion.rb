@@ -93,6 +93,10 @@ def tank_type str
     return "mediumTank"
   elsif str == "heavytank"
     return "heavyTank"
+  elsif str == "at-spg"
+    return "AT-SPG"
+  elsif str == "spg"
+    return "SPG"
   else
     return "tank"
   end
@@ -133,7 +137,69 @@ def parse_tank tank
   suspensions_data.each do |ckey, cdata|
     t['suspensions'][ckey] = parse_suspension(cdata)
   end # suspension
+  set_stock_and_top(t)
   return t
+end
+
+def set_stock_and_top tank
+  # Setting all the stock and top values so the tank inits properly
+  if tank['turreted']
+    # Turrets
+    turret_arr = []
+    tank['turrets'].each do |tkey, tdata|
+      turret_arr.push(tdata)
+    end
+    turret_arr.sort! { |x,y| x['viewRange'] <=> y['viewRange'] }
+    turret_arr.first['stockModule'] = true
+    turret_arr.last['topModule'] = true
+
+    # Guns
+    turret_arr.each do |turret|
+      gun_arr = []
+      turret['availableGuns'].each do |gkey, gdata|
+        gun_arr.push(gdata)
+      end
+      gun_arr.sort! { |x,y| x['penetration'] <=> y['penetration'] }
+      gun_arr.first['stockModule'] = true
+      gun_arr.last['topModule'] = true
+    end # guns
+  else # non-turreted vehicles
+    # Guns
+    gun_arr = []
+    tank['hull']['availableGuns'].each do |gkey, gdata|
+      gun_arr.push(gdata)
+    end
+    gun_arr.sort! { |x,y| x['penetration'] <=> y['penetration'] }
+    gun_arr.first['stockModule'] = true
+    gun_arr.last['topModule'] = true
+  end # turret/guns
+
+  # Engines
+  engine_arr = []
+  tank['engines'].each do |ekey, edata|
+    engine_arr.push(edata)
+  end
+  engine_arr.sort! { |x,y| x['horsepower'] <=> y['horsepower'] }
+  engine_arr.first['stockModule'] = true
+  engine_arr.last['topModule'] = true
+
+  # Radios
+  radio_arr = []
+  tank['radios'].each do |rkey, rdata|
+    radio_arr.push(rdata)
+  end
+  radio_arr.sort! { |x,y| x['signalRange'] <=> y['signalRange'] }
+  radio_arr.first['stockModule'] = true
+  radio_arr.last['topModule'] = true
+
+  # Suspension
+  suspension_arr = []
+  tank['suspensions'].each do |ckey, cdata|
+    suspension_arr.push(cdata)
+  end
+  suspension_arr.sort! { |x,y| x['loadLimit'] <=> y['loadLimit'] }
+  suspension_arr.first['stockModule'] = true
+  suspension_arr.last['topModule'] = true
 end
 
 def parse_hull tank
@@ -144,7 +210,7 @@ def parse_hull tank
   t['name'] = tank['userstring']
   t['nation'] = nation
   t['tier'] = tank['level'].to_i
-  t['type'] = tank['tags']
+  t['type'] = tank_type(tank['tags'])
   t['premiumTank'] = premium
   t['turreted'] = has_turret
   t['experienceNeeded'] = 0
@@ -266,6 +332,7 @@ def write_conversion filename
   end
 end
 
-puts tank_hash("alt_type59.json")
+tank = "alt_t44.json"
 
-write_conversion("alt_type59.json")
+puts tank_hash(tank)
+write_conversion(tank)

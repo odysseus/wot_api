@@ -1,0 +1,450 @@
+{
+    "tier1": {
+        "mediumTank": [
+            "Vickers Medium Mk. I - U.K."
+        ],
+        "lightTank": [
+            "Leichttraktor - Germany",
+            "Renault FT - France",
+            "Renault NC-31 - China",
+            "Renault Otsu - Japan",
+            "MS-1 - U.S.S.R.",
+            "T1 Cunningham - U.S.A."
+        ]
+    },
+    "tier2": {
+        "lightTank": [
+            "BT-2 - U.S.S.R.",
+            "T2 Light Tank - U.S.A.",
+            "T1E6 - U.S.A.",
+            "Vickers Mk. E Type B - China",
+            "T-60 - U.S.S.R.",
+            "Cruiser Mk. I - U.K.",
+            "Pz.Kpfw. II - Germany",
+            "Pz.Kpfw. 35 (t) - Germany",
+            "Type 95 Ha-Go - Japan",
+            "D1 - France",
+            "T7 Combat Car - U.S.A.",
+            "T-26 - U.S.S.R.",
+            "Tetrarch - U.S.S.R.",
+            "Pz.Kpfw. 38H 735 (f) - Germany",
+            "Hotchkiss H35 - France",
+            "M2 Light Tank - U.S.A.",
+            "Light Mk. VIC - U.K.",
+            "Cruiser Mk. III - U.K.",
+            "Pz.Kpfw. I - Germany"
+        ],
+        "SPG": [
+            "T57 - U.S.A.",
+            "Loyd Gun Carriage - U.K.",
+            "Renault FT 75 BS - France",
+            "SU-18 - U.S.S.R.",
+            "G.Pz. Mk. VI (e) - Germany"
+        ],
+        "mediumTank": [
+            "T2 Medium Tank - U.S.A.",
+            "Chi-Ni - Japan",
+            "Vickers Medium Mk. II - U.K."
+        ],
+        "AT-SPG": [
+            "Universal Carrier 2-pdr - U.K.",
+            "AT-1 - U.S.S.R.",
+            "Renault FT AC - France",
+            "T18 - U.S.A.",
+            "Panzerjäger I - Germany"
+        ]
+    },
+    "tier3": {
+        "mediumTank": [
+            "Type 97 Chi-Ha - Japan",
+            "Pz.Kpfw. S35 739 (f) - Germany",
+            "D2 - France",
+            "M2 Medium Tank - U.S.A.",
+            "Vickers Medium Mk. III - U.K."
+        ],
+        "lightTank": [
+            "Pz.Kpfw. 38 (t) - Germany",
+            "Cruiser Mk. IV - U.K.",
+            "T-46 - U.S.S.R.",
+            "Pz.Kpfw. I Ausf. C - Germany",
+            "Type 98 Ke-Ni - Japan",
+            "M3 Stuart - U.S.A.",
+            "M3 Light - U.S.S.R.",
+            "BT-7 - U.S.S.R.",
+            "T-70 - U.S.S.R.",
+            "Type 2597 Chi-Ha - China",
+            "Pz.Kpfw. II Ausf. J - Germany",
+            "Cruiser Mk. II - U.K.",
+            "Pz.Kpfw. III Ausf. A - Germany",
+            "T-127 - U.S.S.R.",
+            "LTP - U.S.S.R.",
+            "Pz.Kpfw. II Ausf. G - Germany",
+            "Type 98 Ke-Ni Otsu - Japan",
+            "M22 Locust - U.S.A.",
+            "BT-SV - U.S.S.R.",
+            "AMX 38 - France",
+            "T-15 - Germany"
+        ],
+        "AT-SPG": [
+            "Renault UE 57 - France",
+            "T82 - U.S.A.",
+            "Marder II - Germany",
+            "FCM 36 Pak 40 - France",
+            "SU-76 - U.S.S.R.",
+            "Valentine AT - U.K."
+        ],
+        "SPG": [
+            "M7 Priest - U.S.A.",
+            "Sturmpanzer I Bison - Germany",
+            "Wespe - Germany",
+            "SU-26 - U.S.S.R.",
+            "Lorraine 39L AM - France",
+            "Sexton I - U.K.",
+            "Sexton II - U.K."
+        ]
+    },
+    "tier4": {
+        "heavyTank": [
+            "Pz.Kpfw. B2 740 (f) - Germany",
+            "Durchbruchswagen 2 - Germany",
+            "B1 - France"
+        ],
+        "mediumTank": [
+            "Pz.Kpfw. III - Germany",
+            "A-32 - U.S.S.R.",
+            "M3 Lee - U.S.A.",
+            "VK 20.01 (D) - Germany",
+            "Matilda - U.K.",
+            "T-28 - U.S.S.R.",
+            "Type 1 Chi-He - Japan"
+        ],
+        "AT-SPG": [
+            "T40 - U.S.A.",
+            "SU-85B - U.S.S.R.",
+            "Marder 38T - Germany",
+            "Hetzer - Germany",
+            "Alecto - U.K.",
+            "Somua SAu 40 - France",
+            "M8A1 - U.S.A."
+        ],
+        "lightTank": [
+            "M5A1 Stuart - China",
+            "A-20 - U.S.S.R.",
+            "AMX 40 - France",
+            "Pz.Kpfw. II Luchs - Germany",
+            "Pz.Kpfw. 38 (t) n.A. - Germany",
+            "Valentine - U.K.",
+            "Type 5 Ke-Ho - Japan",
+            "M5 Stuart - U.S.A.",
+            "Valentine II - U.S.S.R.",
+            "T-80 - U.S.S.R.",
+            "T-50 - U.S.S.R.",
+            "Covenanter - U.K."
+        ],
+        "SPG": [
+            "Pz.Sfl. IVb - Germany",
+            "SU-5 - U.S.S.R.",
+            "M37 - U.S.A.",
+            "Birch Gun - U.K.",
+            "Sturmpanzer II - Germany",
+            "AMX 105 AM mle. 47 - France"
+        ]
+    },
+    "tier5": {
+        "mediumTank": [
+            "T-34 - U.S.S.R.",
+            "Pz.Kpfw. IV - Germany",
+            "Type 3 Chi-Nu - Japan",
+            "Pz.Kpfw. III/IV - Germany",
+            "Type 3 Chi-Nu Kai - Japan",
+            "T-25 - Germany",
+            "M4A2E4 Sherman - U.S.A.",
+            "M7 - U.S.A.",
+            "M4 Sherman - U.S.A.",
+            "Matilda IV - U.S.S.R.",
+            "Type T-34 - China",
+            "Matilda Black Prince - U.K.",
+            "Ram II - U.S.A."
+        ],
+        "SPG": [
+            "AMX 13 105 AM mle. 50 - France",
+            "SU-122A - U.S.S.R.",
+            "M41 - U.S.A.",
+            "Bishop - U.K.",
+            "Grille - Germany",
+            "105 leFH18B2 - France"
+        ],
+        "lightTank": [
+            "VK 16.02 Leopard - Germany",
+            "M24 Chaffee - U.S.A.",
+            "Crusader - U.K.",
+            "ELC AMX - France"
+        ],
+        "heavyTank": [
+            "KV-220 - U.S.S.R.",
+            "Excelsior - U.K.",
+            "T1 Heavy Tank - U.S.A.",
+            "Churchill III - U.S.S.R.",
+            "T14 - U.S.A.",
+            "Churchill I - U.K.",
+            "BDR G1 B - France",
+            "KV-1 - U.S.S.R.",
+            "VK 30.01 (H) - Germany"
+        ],
+        "AT-SPG": [
+            "StuG III - Germany",
+            "SU-85I - U.S.S.R.",
+            "S35 CA - France",
+            "T49 - U.S.A.",
+            "Pz.Sfl. IVc - Germany",
+            "SU-85 - U.S.S.R.",
+            "AT 2 - U.K.",
+            "M10 Wolverine - U.S.A."
+        ]
+    },
+    "tier6": {
+        "heavyTank": [
+            "VK 36.01 (H) - Germany",
+            "T-150 - U.S.S.R.",
+            "TOG II* - U.K.",
+            "KV-1S - U.S.S.R.",
+            "ARL 44 - France",
+            "M6 - U.S.A.",
+            "Churchill VII - U.K.",
+            "KV-2 - U.S.S.R."
+        ],
+        "lightTank": [
+            "59-16 - China",
+            "AMX 12 t - France",
+            "Type 64 - China",
+            "VK 28.01 - Germany",
+            "MT-25 - U.S.S.R.",
+            "T21 - U.S.A."
+        ],
+        "mediumTank": [
+            "Pz.Kpfw. IV Schmalturm - Germany",
+            "A-43 - U.S.S.R.",
+            "Cromwell - U.K.",
+            "VK 30.01 (P) - Germany",
+            "T-34-85 - U.S.S.R.",
+            "M4A3E8 Sherman - U.S.A.",
+            "VK 30.01 (D) - Germany",
+            "Pz.Kpfw. V/IV - Germany",
+            "Type 58 - China",
+            "M4A3E2 Sherman Jumbo - U.S.A.",
+            "Type 4 Chi-To - Japan",
+            "VK 30.02 (M) - Germany"
+        ],
+        "AT-SPG": [
+            "AT 8 - U.K.",
+            "SU-100Y - U.S.S.R.",
+            "M18 Hellcat - U.S.A.",
+            "SU-100 - U.S.S.R.",
+            "M36 Jackson - U.S.A.",
+            "Churchill Gun Carrier - U.K.",
+            "Jagdpanzer IV - Germany",
+            "ARL V39 - France",
+            "Dicker Max - Germany",
+            "Nashorn - Germany"
+        ],
+        "SPG": [
+            "Hummel - Germany",
+            "AMX 13 F3 AM - France",
+            "M44 - U.S.A.",
+            "SU-8 - U.S.S.R.",
+            "FV304 - U.K."
+        ]
+    },
+    "tier7": {
+        "mediumTank": [
+            "Panther - Germany",
+            "VK 30.02 (D) - Germany",
+            "KV-13 - U.S.S.R.",
+            "Type 5 Chi-Ri - Japan",
+            "T-43 - U.S.S.R.",
+            "Comet - U.K.",
+            "T-34-1 - China",
+            "T20 - U.S.A.",
+            "Panther/M10 - Germany",
+            "A-44 - U.S.S.R."
+        ],
+        "lightTank": [
+            "AMX 13 75 - France",
+            "Type 62 - China",
+            "Aufklärungspanzer Panther - Germany",
+            "T71 - U.S.A.",
+            "WZ-131 - China"
+        ],
+        "AT-SPG": [
+            "SU-152 - U.S.S.R.",
+            "SU-100M1 - U.S.S.R.",
+            "AT 15A - U.K.",
+            "AT 7 - U.K.",
+            "AMX AC mle. 46 - France",
+            "T25 AT - U.S.A.",
+            "Pz.Sfl. V - Germany",
+            "E 25 - Germany",
+            "SU-122-44 - U.S.S.R.",
+            "Jagdpanther - Germany",
+            "T25/2 - U.S.A."
+        ],
+        "heavyTank": [
+            "Black Prince - U.K.",
+            "IS - U.S.S.R.",
+            "T29 - U.S.A.",
+            "KV-3 - U.S.S.R.",
+            "AMX M4 mle. 45 - France",
+            "IS-2 - China",
+            "Tiger (P) - Germany",
+            "Tiger I - Germany"
+        ],
+        "SPG": [
+            "S-51 - U.S.S.R.",
+            "Crusader 5.5-in. SP - U.K.",
+            "SU-14-1 - U.S.S.R.",
+            "Lorraine 155 mle. 50 - France",
+            "G.W. Panther - Germany",
+            "M12 - U.S.A."
+        ]
+    },
+    "tier8": {
+        "heavyTank": [
+            "AMX 50 100 - France",
+            "IS-6 - U.S.S.R.",
+            "VK 45.02 (P) Ausf. A - Germany",
+            "T32 - U.S.A.",
+            "Tiger II - Germany",
+            "T34 - U.S.A.",
+            "110 - China",
+            "Löwe - Germany",
+            "FCM 50 t - France",
+            "KV-4 - U.S.S.R.",
+            "Caernarvon - U.K.",
+            "112 - China",
+            "IS-3 - U.S.S.R.",
+            "KV-5 - U.S.S.R.",
+            "M6A2E1 - U.S.A."
+        ],
+        "AT-SPG": [
+            "ISU-152 - U.S.S.R.",
+            "AT 15 - U.K.",
+            "8,8 cm Pak 43 Jagdtiger - Germany",
+            "Jagdpanther II - Germany",
+            "Rhm.-Borsig Waffenträger - Germany",
+            "AMX AC mle. 48 - France",
+            "SU-101 - U.S.S.R.",
+            "T28 - U.S.A.",
+            "T28 Prototype - U.S.A.",
+            "Ferdinand - Germany"
+        ],
+        "SPG": [
+            "SU-14-2 - U.S.S.R.",
+            "M40/M43 - U.S.A.",
+            "G.W. Tiger (P) - Germany",
+            "FV207 - U.K.",
+            "Lorraine 155 mle. 51 - France"
+        ],
+        "mediumTank": [
+            "Panther II - Germany",
+            "Object 416 - U.S.S.R.",
+            "T-34-2 - China",
+            "T-34-3 - China",
+            "STA-1 - Japan",
+            "T69 - U.S.A.",
+            "Centurion Mk. I - U.K.",
+            "Type 59 - China",
+            "T26E4 SuperPershing - U.S.A.",
+            "M26 Pershing - U.S.A.",
+            "T-44 - U.S.S.R.",
+            "Indien-Panzer - Germany"
+        ],
+        "lightTank": [
+            "AMX 13 90 - France",
+            "WZ-132 - China"
+        ]
+    },
+    "tier9": {
+        "heavyTank": [
+            "VK 45.02 (P) Ausf. B - Germany",
+            "Conqueror - U.K.",
+            "AMX 50 120 - France",
+            "M103 - U.S.A.",
+            "ST-I - U.S.S.R.",
+            "WZ-111 model 1-4 - China",
+            "E 75 - Germany",
+            "IS-8 - U.S.S.R."
+        ],
+        "SPG": [
+            "FV3805 - U.K.",
+            "Bat.-Châtillon 155 55 - France",
+            "212A - U.S.S.R.",
+            "G.W. Tiger - Germany",
+            "M53/M55 - U.S.A."
+        ],
+        "AT-SPG": [
+            "T95 - U.S.A.",
+            "Object 704 - U.S.S.R.",
+            "T30 - U.S.A.",
+            "AMX 50 Foch - France",
+            "Waffenträger auf Pz. IV - Germany",
+            "Jagdtiger - Germany",
+            "Tortoise - U.K.",
+            "SU-122-54 - U.S.S.R."
+        ],
+        "mediumTank": [
+            "Object 430 Version II - U.S.S.R.",
+            "T-54 - U.S.S.R.",
+            "WZ-120 - China",
+            "E 50 - Germany",
+            "Type 61 - Japan",
+            "T54E1 - U.S.A.",
+            "Centurion Mk. 7/1 - U.K.",
+            "Lorraine 40 t - France",
+            "M46 Patton - U.S.A.",
+            "Leopard Prototyp A - Germany"
+        ]
+    },
+    "tier10": {
+        "mediumTank": [
+            "121 - China",
+            "Leopard 1 - Germany",
+            "E 50 Ausf. M - Germany",
+            "FV4202 - U.K.",
+            "Object 430 - U.S.S.R.",
+            "Bat.-Châtillon 25 t - France",
+            "T-62A - U.S.S.R.",
+            "Object 140 - U.S.S.R.",
+            "STB-1 - Japan",
+            "M48A1 Patton - U.S.A."
+        ],
+        "heavyTank": [
+            "AMX 50 B - France",
+            "FV215b - U.K.",
+            "IS-4 - U.S.S.R.",
+            "E 100 - Germany",
+            "T110E5 - U.S.A.",
+            "T57 Heavy Tank - U.S.A.",
+            "Maus - Germany",
+            "IS-7 - U.S.S.R.",
+            "113 - China",
+            "VK 72.01 (K) - Germany"
+        ],
+        "AT-SPG": [
+            "T110E3 - U.S.A.",
+            "Object 263 - U.S.S.R.",
+            "Waffenträger auf E 100 - Germany",
+            "FV215b (183) - U.K.",
+            "AMX 50 Foch (155) - France",
+            "Jagdpanzer E 100 - Germany",
+            "T110E4 - U.S.A.",
+            "Object 268 - U.S.S.R."
+        ],
+        "SPG": [
+            "T92 - U.S.A.",
+            "Conqueror Gun Carriage - U.K.",
+            "G.W. E 100 - Germany",
+            "Bat.-Châtillon 155 58 - France",
+            "Object 261 - U.S.S.R."
+        ]
+    }
+}
