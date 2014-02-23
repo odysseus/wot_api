@@ -1,0 +1,434 @@
+{
+    "name": "T-44",
+    "nationality": "ussr",
+    "tier": 8,
+    "type": "mediumtank",
+    "premiumTank": false,
+    "turreted": true,
+    "experienceNeeded": 0,
+    "cost": 2390000,
+    "baseHitpoints": 960,
+    "speedLimit": 51,
+    "reverseSpeed": 20,
+    "camoValue": 0,
+    "crewLevel": 100,
+    "stockWeight": 32.38,
+    "hull": {
+        "frontArmor": [
+            90,
+            5
+        ],
+        "sideArmor": [
+            75,
+            5
+        ],
+        "rearArmor": [
+            45,
+            5
+        ]
+    },
+    "turrets": {
+        "t-44": {
+            "name": "T-44",
+            "tier": 8,
+            "viewRange": 370,
+            "traverseSpeed": 48,
+            "frontArmor": [
+                120,
+                5
+            ],
+            "sideArmor": [
+                90,
+                5
+            ],
+            "rearArmor": [
+                75,
+                5
+            ],
+            "weight": 7000,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 28000,
+            "additionalHP": 240,
+            "availableGuns": {},
+            "_85mm_zis_s-53": {
+                "name": "85 mm S-53",
+                "tier": 6,
+                "rateOfFire": 12.5,
+                "accuracy": 0.42,
+                "aimTime": 2.9,
+                "gunDepression": -7,
+                "gunElevation": 25,
+                "weight": 1550,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 62000,
+                "dispersion": {
+                    "turretRotation": 0.16,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        126,
+                        160,
+                        109,
+                        false
+                    ],
+                    [
+                        167,
+                        160,
+                        7,
+                        true
+                    ],
+                    [
+                        43,
+                        280,
+                        98,
+                        false
+                    ]
+                ]
+            },
+            "_85mm_d5t-85bm": {
+                "name": "85 mm D5T-85BM",
+                "tier": 7,
+                "rateOfFire": 10.526315789473683,
+                "accuracy": 0.37,
+                "aimTime": 2.9,
+                "gunDepression": -7,
+                "gunElevation": 25,
+                "weight": 1850,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 73600,
+                "dispersion": {
+                    "turretRotation": 0.16,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        144,
+                        180,
+                        175,
+                        false
+                    ],
+                    [
+                        194,
+                        180,
+                        8,
+                        true
+                    ],
+                    [
+                        44,
+                        300,
+                        139,
+                        false
+                    ]
+                ]
+            }
+        },
+        "t-44-100": {
+            "name": "T-44-100",
+            "tier": 9,
+            "viewRange": 380,
+            "traverseSpeed": 48,
+            "frontArmor": [
+                120,
+                5
+            ],
+            "sideArmor": [
+                100,
+                5
+            ],
+            "rearArmor": [
+                100,
+                5
+            ],
+            "weight": 7800,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 48000,
+            "additionalHP": 340,
+            "availableGuns": {},
+            "_85mm_zis_s-53": {
+                "name": "85 mm S-53",
+                "tier": 6,
+                "rateOfFire": 12.76595744680851,
+                "accuracy": 0.42,
+                "aimTime": 2.9,
+                "gunDepression": -7,
+                "gunElevation": 25,
+                "weight": 1550,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 62000,
+                "dispersion": {
+                    "turretRotation": 0.14,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        126,
+                        160,
+                        109,
+                        false
+                    ],
+                    [
+                        167,
+                        160,
+                        7,
+                        true
+                    ],
+                    [
+                        43,
+                        280,
+                        98,
+                        false
+                    ]
+                ]
+            },
+            "_85mm_d5t-85bm": {
+                "name": "85 mm D5T-85BM",
+                "tier": 7,
+                "rateOfFire": 10.714285714285715,
+                "accuracy": 0.37,
+                "aimTime": 2.9,
+                "gunDepression": -7,
+                "gunElevation": 25,
+                "weight": 1850,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 73600,
+                "dispersion": {
+                    "turretRotation": 0.14,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        144,
+                        180,
+                        175,
+                        false
+                    ],
+                    [
+                        194,
+                        180,
+                        8,
+                        true
+                    ],
+                    [
+                        44,
+                        300,
+                        139,
+                        false
+                    ]
+                ]
+            },
+            "_100mm_d10t": {
+                "name": "100 mm D10T",
+                "tier": 7,
+                "rateOfFire": 6.593406593406594,
+                "accuracy": 0.42,
+                "aimTime": 2.9,
+                "gunDepression": -7,
+                "gunElevation": 23,
+                "weight": 2257,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 78180,
+                "dispersion": {
+                    "turretRotation": 0.14,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        175,
+                        250,
+                        252,
+                        false
+                    ],
+                    [
+                        235,
+                        250,
+                        11,
+                        true
+                    ],
+                    [
+                        50,
+                        330,
+                        252,
+                        false
+                    ]
+                ]
+            },
+            "_100mm_lb-1": {
+                "name": "100 mm LB-1",
+                "tier": 7,
+                "rateOfFire": 6.976744186046512,
+                "accuracy": 0.35,
+                "aimTime": 2.3,
+                "gunDepression": -7,
+                "gunElevation": 23,
+                "weight": 2400,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 130750,
+                "dispersion": {
+                    "turretRotation": 0.14,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        175,
+                        250,
+                        252,
+                        false
+                    ],
+                    [
+                        235,
+                        250,
+                        11,
+                        true
+                    ],
+                    [
+                        50,
+                        330,
+                        252,
+                        false
+                    ]
+                ]
+            },
+            "_122mm_d-25-44": {
+                "name": "122 mm D-25-44",
+                "tier": 8,
+                "rateOfFire": 3.125,
+                "accuracy": 0.43,
+                "aimTime": 3.4,
+                "gunDepression": -5,
+                "gunElevation": 23,
+                "weight": 2600,
+                "stockModule": false,
+                "topModule": false,
+                "cost": 106370,
+                "dispersion": {
+                    "turretRotation": 0.14,
+                    "afterShot": 4,
+                    "gunDamaged": 2
+                },
+                "shells": [
+                    [
+                        175,
+                        390,
+                        1025,
+                        false
+                    ],
+                    [
+                        217,
+                        390,
+                        12,
+                        true
+                    ],
+                    [
+                        61,
+                        465,
+                        608,
+                        false
+                    ]
+                ]
+            }
+        }
+    },
+    "engines": {
+        "v-2-44": {
+            "name": "V-2-44",
+            "tier": 8,
+            "horsepower": 560,
+            "firechance": 0.12,
+            "weight": 750,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 49740
+        },
+        "v-2-54": {
+            "name": "V-2-54",
+            "tier": 9,
+            "horsepower": 620,
+            "firechance": 0.12,
+            "weight": 700,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 79290
+        },
+        "v-54-6": {
+            "name": "V-54-6",
+            "tier": 9,
+            "horsepower": 680,
+            "firechance": 0.12,
+            "weight": 700,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 82300
+        }
+    },
+    "radios": {
+        "_9rm": {
+            "name": "9RM",
+            "tier": 8,
+            "signalRange": 525,
+            "weight": 100,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 24240
+        },
+        "r113": {
+            "name": "R-113",
+            "tier": 10,
+            "signalRange": 730,
+            "weight": 80,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 52200
+        }
+    },
+    "suspensions": {
+        "t-44": {
+            "name": "T-44",
+            "tier": 7,
+            "loadLimit": 33,
+            "traverseSpeed": 42,
+            "weight": 7700,
+            "pivot": "false",
+            "terrainResistance": [
+                "1.1",
+                "1.4",
+                "2.2"
+            ],
+            "dispersion": 0.22,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 16070
+        },
+        "t-44bis": {
+            "name": "T-44M",
+            "tier": 8,
+            "loadLimit": 35.3,
+            "traverseSpeed": 44,
+            "weight": 7700,
+            "pivot": "false",
+            "terrainResistance": [
+                "1",
+                "1.2",
+                "2"
+            ],
+            "dispersion": 0.2,
+            "stockModule": false,
+            "topModule": false,
+            "cost": 30200
+        }
+    }
+}
