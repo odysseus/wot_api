@@ -1,0 +1,818 @@
+{
+    "balanceweight": 48,
+    "id": "20",
+    "userstring": "Tiger II",
+    "description": "#germany:pzvib_tiger_ii_descr",
+    "price": {
+        "value": "2450000",
+        "kind": "silver"
+    },
+    "tags": "heavytank",
+    "level": "8",
+    "crew": {
+        "commander1": [],
+        "driver1": [],
+        "gunner1": [],
+        "loader1": [],
+        "radioman1": []
+    },
+    "speedlimits": {
+        "forward": "38",
+        "backward": "12"
+    },
+    "repaircost": "7.524",
+    "crewxpfactor": "1.0",
+    "hull": {
+        "primaryarmor": [
+            "150",
+            "80",
+            "80"
+        ],
+        "weight": "32300",
+        "maxhealth": "1200",
+        "ammobayhealth": {
+            "maxhealth": "220",
+            "maxregenhealth": "150",
+            "repaircost": "1.0"
+        }
+    },
+    "chassis": {
+        "pzvib_standardketten": {
+            "userstring": "Tiger II Vesuchs-Serie",
+            "level": "7",
+            "price": "20080.0",
+            "maxclimbangle": "25",
+            "weight": "22350",
+            "maxload": "69700",
+            "terrainresistance": [
+                "1.1",
+                "1.3",
+                "2.5"
+            ],
+            "brakeforce": "61000",
+            "rotationisaroundcenter": "true",
+            "rotationspeed": "26",
+            "shotdispersionfactors": {
+                "vehiclemovement": "0.2",
+                "vehiclerotation": "0.2"
+            },
+            "maxhealth": "220",
+            "maxregenhealth": "165",
+            "repaircost": "5.0"
+        },
+        "pzvib_vetstaerktketten": {
+            "userstring": "Tiger II",
+            "level": "8",
+            "price": "37520.0",
+            "maxclimbangle": "25",
+            "weight": "22350",
+            "maxload": "74000",
+            "terrainresistance": [
+                "1",
+                "1.2",
+                "2.3"
+            ],
+            "brakeforce": "68000",
+            "rotationisaroundcenter": "true",
+            "rotationspeed": "28",
+            "shotdispersionfactors": {
+                "vehiclemovement": "0.18",
+                "vehiclerotation": "0.18"
+            },
+            "maxhealth": "240",
+            "maxregenhealth": "180",
+            "repaircost": "5.0"
+        }
+    },
+    "turrets0": {
+        "pzvib_porsche_turm": {
+            "userstring": "Tiger II Turm Nr. 1-50",
+            "level": "8",
+            "price": "28320.0",
+            "primaryarmor": [
+                "100",
+                "80",
+                "80"
+            ],
+            "weight": "9638",
+            "maxhealth": "300",
+            "rotationspeed": "27",
+            "turretrotatorhealth": {
+                "maxhealth": "150",
+                "maxregenhealth": "75",
+                "repaircost": "1.0"
+            },
+            "circularvisionradius": "380",
+            "surveyingdevicehealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "50",
+                "repaircost": "2.0"
+            },
+            "guns": {
+                "_88mm_kwk_43_l71": {
+                    "userstring": "8,8 cm Kw.K. 43 L/71",
+                    "level": "8",
+                    "price": "112180",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "30.625",
+                    "reloadtime": "6.7",
+                    "maxammo": "72",
+                    "aimingtime": "2.5",
+                    "weight": "2562",
+                    "maxhealth": "170",
+                    "maxregenhealth": "85",
+                    "repaircost": "7",
+                    "shotdispersionradius": "0.34",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.12",
+                        "aftershot": "3",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_88mm_pzgr39_43": {
+                            "userstring": "Pzgr 39/43",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "88",
+                            "damage": {
+                                "armor": "240",
+                                "devices": "119"
+                            },
+                            "speed": "1000",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "203",
+                                "185"
+                            ]
+                        },
+                        "_88mm_pzgr.40_43": {
+                            "userstring": "Pzgr 40/43",
+                            "price": {
+                                "value": "11",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "88",
+                            "damage": {
+                                "armor": "240",
+                                "devices": "119"
+                            },
+                            "speed": "1250",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "237",
+                                "217"
+                            ]
+                        },
+                        "_88mm_sprg.43": {
+                            "userstring": "Sprgr 43",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "88",
+                            "explosionradius": "1.4",
+                            "damage": {
+                                "armor": "295",
+                                "devices": "119"
+                            },
+                            "speed": "1000",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "44",
+                                "44"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "front": [
+                            "-15",
+                            "5",
+                            "25"
+                        ],
+                        "back": [
+                            "-15",
+                            "5",
+                            "25"
+                        ],
+                        "transition": [
+                            "5"
+                        ]
+                    }
+                },
+                "_105mm_kwk45_l52": {
+                    "userstring": "10,5 cm Kw.K. L/52",
+                    "level": "8",
+                    "price": "116490",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "21.875",
+                    "reloadtime": "10.9",
+                    "maxammo": "42",
+                    "aimingtime": "2.5",
+                    "weight": "3000",
+                    "maxhealth": "180",
+                    "maxregenhealth": "90",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.37",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.12",
+                        "aftershot": "3.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_105mm_pzgr39l": {
+                            "userstring": "Pzgr 39 L",
+                            "price": {
+                                "value": "1030",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "200",
+                                "183"
+                            ]
+                        },
+                        "_105mm_pzgr.40": {
+                            "userstring": "Pzgr 40",
+                            "price": {
+                                "value": "12",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1188",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "244",
+                                "229"
+                            ]
+                        },
+                        "_105mm_sprg_l": {
+                            "userstring": "Sprgr L",
+                            "price": {
+                                "value": "650",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "105",
+                            "explosionradius": "1.91",
+                            "damage": {
+                                "armor": "420",
+                                "devices": "150"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "60",
+                                "60"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "front": [
+                            "-15",
+                            "5",
+                            "25"
+                        ],
+                        "back": [
+                            "-15",
+                            "4",
+                            "25"
+                        ],
+                        "transition": [
+                            "5"
+                        ]
+                    }
+                },
+                "_105mm_kwk46_l68": {
+                    "userstring": "10,5 cm Kw.K. L/68",
+                    "level": "9",
+                    "price": "178500",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "21.875",
+                    "reloadtime": "10.9",
+                    "maxammo": "42",
+                    "aimingtime": "2.7",
+                    "weight": "3600",
+                    "maxhealth": "190",
+                    "maxregenhealth": "95",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.34",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "3.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_105mm_pzgr39l": {
+                            "userstring": "Pzgr 39 L",
+                            "price": {
+                                "value": "1030",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1100",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "225",
+                                "195"
+                            ]
+                        },
+                        "_105mm_pzgr.40": {
+                            "userstring": "Pzgr 40",
+                            "price": {
+                                "value": "12",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1375",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "285",
+                                "249"
+                            ]
+                        },
+                        "_105mm_sprg_l": {
+                            "userstring": "Sprgr L",
+                            "price": {
+                                "value": "650",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "105",
+                            "explosionradius": "1.91",
+                            "damage": {
+                                "armor": "420",
+                                "devices": "150"
+                            },
+                            "speed": "1100",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "60",
+                                "60"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "front": [
+                            "-15",
+                            "5",
+                            "25"
+                        ],
+                        "back": [
+                            "-15",
+                            "4",
+                            "25"
+                        ],
+                        "transition": [
+                            "5"
+                        ]
+                    }
+                }
+            }
+        },
+        "pzvib_heinschel_turm": {
+            "userstring": "Tiger II Serienturm",
+            "level": "9",
+            "price": "52370.0",
+            "primaryarmor": [
+                "185",
+                "80",
+                "80"
+            ],
+            "weight": "10938",
+            "maxhealth": "400",
+            "rotationspeed": "27",
+            "turretrotatorhealth": {
+                "maxhealth": "150",
+                "maxregenhealth": "75",
+                "repaircost": "1.0"
+            },
+            "circularvisionradius": "390",
+            "surveyingdevicehealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "50",
+                "repaircost": "2.0"
+            },
+            "guns": {
+                "_88mm_kwk_43_l71": {
+                    "userstring": "8,8 cm Kw.K. 43 L/71",
+                    "level": "8",
+                    "price": "112180",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "30.625",
+                    "reloadtime": "6.7",
+                    "maxammo": "72",
+                    "aimingtime": "2.3",
+                    "weight": "2562",
+                    "maxhealth": "170",
+                    "maxregenhealth": "85",
+                    "repaircost": "7",
+                    "shotdispersionradius": "0.34",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.1",
+                        "aftershot": "3",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_88mm_pzgr39_43": {
+                            "userstring": "Pzgr 39/43",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "88",
+                            "damage": {
+                                "armor": "240",
+                                "devices": "119"
+                            },
+                            "speed": "1000",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "203",
+                                "185"
+                            ]
+                        },
+                        "_88mm_pzgr.40_43": {
+                            "userstring": "Pzgr 40/43",
+                            "price": {
+                                "value": "11",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "88",
+                            "damage": {
+                                "armor": "240",
+                                "devices": "119"
+                            },
+                            "speed": "1250",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "237",
+                                "217"
+                            ]
+                        },
+                        "_88mm_sprg.43": {
+                            "userstring": "Sprgr 43",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "88",
+                            "explosionradius": "1.4",
+                            "damage": {
+                                "armor": "295",
+                                "devices": "119"
+                            },
+                            "speed": "1000",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "44",
+                                "44"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-15",
+                            "5",
+                            "10"
+                        ]
+                    }
+                },
+                "_105mm_kwk45_l52": {
+                    "userstring": "10,5 cm Kw.K. L/52",
+                    "level": "8",
+                    "price": "116490",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "21.875",
+                    "reloadtime": "10.4",
+                    "maxammo": "42",
+                    "aimingtime": "2.3",
+                    "weight": "3000",
+                    "maxhealth": "180",
+                    "maxregenhealth": "90",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.37",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.1",
+                        "aftershot": "3.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_105mm_pzgr39l": {
+                            "userstring": "Pzgr 39 L",
+                            "price": {
+                                "value": "1030",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "200",
+                                "183"
+                            ]
+                        },
+                        "_105mm_pzgr.40": {
+                            "userstring": "Pzgr 40",
+                            "price": {
+                                "value": "12",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1188",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "244",
+                                "229"
+                            ]
+                        },
+                        "_105mm_sprg_l": {
+                            "userstring": "Sprgr L",
+                            "price": {
+                                "value": "650",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "105",
+                            "explosionradius": "1.91",
+                            "damage": {
+                                "armor": "420",
+                                "devices": "150"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "60",
+                                "60"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-15",
+                            "5",
+                            "10"
+                        ]
+                    }
+                },
+                "_105mm_kwk46_l68": {
+                    "userstring": "10,5 cm Kw.K. L/68",
+                    "level": "9",
+                    "price": "178500",
+                    "impulse": "0.38",
+                    "pitchlimits": [
+                        "-15",
+                        "8"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "21.875",
+                    "reloadtime": "10.4",
+                    "maxammo": "42",
+                    "aimingtime": "2.5",
+                    "weight": "3600",
+                    "maxhealth": "190",
+                    "maxregenhealth": "95",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.34",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.12",
+                        "aftershot": "3.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_105mm_pzgr39l": {
+                            "userstring": "Pzgr 39 L",
+                            "price": {
+                                "value": "1030",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1100",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "225",
+                                "195"
+                            ]
+                        },
+                        "_105mm_pzgr.40": {
+                            "userstring": "Pzgr 40",
+                            "price": {
+                                "value": "12",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "105",
+                            "damage": {
+                                "armor": "320",
+                                "devices": "150"
+                            },
+                            "speed": "1375",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "285",
+                                "249"
+                            ]
+                        },
+                        "_105mm_sprg_l": {
+                            "userstring": "Sprgr L",
+                            "price": {
+                                "value": "650",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "105",
+                            "explosionradius": "1.91",
+                            "damage": {
+                                "armor": "420",
+                                "devices": "150"
+                            },
+                            "speed": "1100",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "60",
+                                "60"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-15",
+                            "5",
+                            "10"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "engines": {
+        "maybach_hl_210_trm_p45": {
+            "userstring": "Maybach HL 210 TRM P45",
+            "tags": "gasoline",
+            "level": "7",
+            "price": "35500",
+            "power": "650",
+            "weight": "850",
+            "maxhealth": "200",
+            "maxregenhealth": "100",
+            "repaircost": "8",
+            "firestartingchance": "0.2"
+        },
+        "maybach_hl_230_trm_p45": {
+            "userstring": "Maybach HL 230 TRM P45",
+            "tags": "gasoline",
+            "level": "8",
+            "price": "54000",
+            "power": "700",
+            "weight": "1300",
+            "maxhealth": "260",
+            "maxregenhealth": "129",
+            "repaircost": "8",
+            "firestartingchance": "0.2"
+        }
+    },
+    "fueltanks": {
+        "price": "100",
+        "weight": "300",
+        "maxhealth": "200",
+        "maxregenhealth": "70",
+        "repaircost": "1.0"
+    },
+    "radios": {
+        "fug5": {
+            "userstring": "FuG 5",
+            "level": "3",
+            "price": "630",
+            "weight": "50",
+            "distance": "310",
+            "maxhealth": "100",
+            "maxregenhealth": "49",
+            "repaircost": "0.5"
+        },
+        "fug7": {
+            "userstring": "FuG 7",
+            "level": "6",
+            "price": "8160",
+            "weight": "70",
+            "distance": "415",
+            "maxhealth": "120",
+            "maxregenhealth": "60",
+            "repaircost": "1.5"
+        },
+        "fug12": {
+            "userstring": "FuG 12",
+            "level": "9",
+            "price": "43200",
+            "weight": "150",
+            "distance": "710",
+            "maxhealth": "150",
+            "maxregenhealth": "75",
+            "repaircost": "3"
+        }
+    }
+}

@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 WOT_HOST = 'api.worldoftanks.com'
-APP_ID = '19c9589415e3eefac7daf8039b2e5f1f'
+APP_ID = 'demo'
 
 def wot_api_request request_string
   Net::HTTP.get(WOT_HOST, request_string)
@@ -27,7 +27,7 @@ def sorted_vehicle_dict
   sorted_dict = {}
   (1..10).each { |x| sorted_dict["tier#{x}"] = {} }
   # Pull the data
-  raw_list = $list_of_vehicles
+  raw_list = list_of_vehicles
   raw_list.each_key do |key|
     if not sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']]
       sorted_dict["tier#{raw_list[key]['level']}"][raw_list[key]['type']] = [raw_list[key]['tank_id']]

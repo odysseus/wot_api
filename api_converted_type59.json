@@ -1,0 +1,133 @@
+{
+    "#china_vehicles:Ch01_Type59": {
+        "name": "Type 59",
+        "nation": "china",
+        "tier": 8,
+        "type": "mediumTank",
+        "premiumTank": true,
+        "turreted": true,
+        "experienceNeeded": 0,
+        "cost": 0,
+        "baseHitpoints": 1300,
+        "gunArc": 360,
+        "speedLimit": 56,
+        "camoValue": 0,
+        "crewLevel": 100,
+        "stockWeight": 36,
+        "hull": {
+            "frontArmor": [
+                100,
+                5
+            ],
+            "sideArmor": [
+                80,
+                5
+            ],
+            "rearArmor": [
+                45,
+                5
+            ]
+        },
+        "turrets": {
+            "Turret_1_Ch01_Type59_2": {
+                "name": "Type 59",
+                "tier": 8,
+                "viewRange": 380,
+                "traverseSpeed": 46,
+                "frontArmor": [
+                    200,
+                    5
+                ],
+                "sideArmor": [
+                    130,
+                    5
+                ],
+                "rearArmor": [
+                    60,
+                    5
+                ],
+                "weight": 0,
+                "stockModule": true,
+                "topModule": true,
+                "experienceNeeded": 0,
+                "cost": 28000,
+                "additionalHP": 0,
+                "availableGuns": {
+                    "_100mm_59": {
+                        "name": "100 mm Type 59",
+                        "tier": 8,
+                        "shells": [
+                            [
+                                181,
+                                250,
+                                0,
+                                false
+                            ],
+                            [
+                                241,
+                                250,
+                                0,
+                                true
+                            ],
+                            [
+                                50,
+                                330,
+                                0,
+                                false
+                            ]
+                        ],
+                        "rateOfFire": 7.5,
+                        "accuracy": 0,
+                        "aimTime": 0,
+                        "gunDepression": 0,
+                        "gunElevation": 0,
+                        "weight": 0,
+                        "stockModule": true,
+                        "topModule": true,
+                        "experienceNeeded": 0,
+                        "cost": 78180,
+                        "autoloader": false
+                    }
+                }
+            }
+        },
+        "engines": {
+            "NORINCO_12150L7": {
+                "name": "NORINCO 12150L",
+                "tier": 8,
+                "horsepower": 520,
+                "fireChance": 0.12,
+                "weight": 0,
+                "stockModule": true,
+                "topModule": true,
+                "experienceNeeded": 0,
+                "cost": 79290
+            }
+        },
+        "suspensions": {
+            "Chassis_Ch01_Type59_2": {
+                "name": "Type 59",
+                "tier": 8,
+                "loadLimit": 39.8,
+                "traverseSpeed": 46,
+                "weight": 0,
+                "stockModule": true,
+                "topModule": true,
+                "experienceNeeded": 0,
+                "cost": 30200
+            }
+        },
+        "radios": {
+            "_9RM": {
+                "name": "A-220",
+                "tier": 9,
+                "signalRange": 600,
+                "weight": 0,
+                "stockModule": true,
+                "topModule": true,
+                "experienceNeeded": 0,
+                "cost": 24240
+            }
+        }
+    }
+}

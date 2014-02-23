@@ -15,7 +15,7 @@
                 "speedLimit": 55,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 44.45,
+                "stockWeight": 44.45,
                 "hull": {
                     "frontArmor": [
                         85,
@@ -389,7 +389,7 @@
                 "speedLimit": 56,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 37.29,
+                "stockWeight": 37.29,
                 "hull": {
                     "frontArmor": [
                         80,
@@ -774,7 +774,7 @@
                 "speedLimit": 50,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 30.65,
+                "stockWeight": 30.65,
                 "hull": {
                     "frontArmor": [
                         120,
@@ -1173,7 +1173,7 @@
                 "speedLimit": 42,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 35.29,
+                "stockWeight": 35.29,
                 "hull": {
                     "frontArmor": [
                         75,
@@ -1522,7 +1522,7 @@
                 "speedLimit": 51,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 33.13,
+                "stockWeight": 33.13,
                 "hull": {
                     "frontArmor": [
                         75,
@@ -1862,7 +1862,7 @@
                 "speedLimit": 51.5,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 30.52,
+                "stockWeight": 30.52,
                 "hull": {
                     "frontArmor": [
                         76,
@@ -2271,7 +2271,7 @@
                 "speedLimit": 50,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 29.5,
+                "stockWeight": 29.5,
                 "hull": {
                     "frontArmor": [
                         60,
@@ -2611,7 +2611,7 @@
                 "speedLimit": 56,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 28.89,
+                "stockWeight": 28.89,
                 "hull": {
                     "frontArmor": [
                         63,
@@ -2975,7 +2975,7 @@
                 "speedLimit": 46,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 45.96,
+                "stockWeight": 45.96,
                 "hull": {
                     "frontArmor": [
                         85,
@@ -3106,7 +3106,7 @@
                 "speedLimit": 59,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 36.42,
+                "stockWeight": 36.42,
                 "hull": {
                     "frontArmor": [
                         150,
@@ -3542,7 +3542,7 @@
                 "speedLimit": 61,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 14.63,
+                "stockWeight": 14.63,
                 "hull": {
                     "frontArmor": [
                         40,
@@ -3751,7 +3751,7 @@
                 "speedLimit": 60,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 21,
+                "stockWeight": 21,
                 "hull": {
                     "frontArmor": [
                         35,
@@ -3882,7 +3882,7 @@
                 "speedLimit": 60,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 37.67,
+                "stockWeight": 37.67,
                 "hull": {
                     "frontArmor": [
                         85,
@@ -4232,7 +4232,7 @@
                 "speedLimit": 64.4,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 17.91,
+                "stockWeight": 17.91,
                 "hull": {
                     "frontArmor": [
                         25,
@@ -4430,7 +4430,7 @@
                 "speedLimit": 60,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 20.1,
+                "stockWeight": 20.1,
                 "hull": {
                     "frontArmor": [
                         35,
@@ -4831,7 +4831,7 @@
                 "speedLimit": 43,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 45.73,
+                "stockWeight": 45.73,
                 "hull": {
                     "frontArmor": [
                         75,
@@ -5049,7 +5049,7 @@
                 "speedLimit": 50,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 32.08,
+                "stockWeight": 32.08,
                 "hull": {
                     "frontArmor": [
                         90,
@@ -5233,7 +5233,7 @@
                 "speedLimit": 20,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 65,
+                "stockWeight": 65,
                 "hull": {
                     "frontArmor": [
                         228,
@@ -5339,7 +5339,7 @@
                 "speedLimit": 20,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 43.5,
+                "stockWeight": 43.5,
                 "hull": {
                     "frontArmor": [
                         203,
@@ -5603,7 +5603,7 @@
                 "speedLimit": 50,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 49.52,
+                "stockWeight": 49.52,
                 "hull": {
                     "frontArmor": [
                         120,
@@ -5822,7 +5822,7 @@
                 "speedLimit": 56,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 38.74,
+                "stockWeight": 38.74,
                 "hull": {
                     "frontArmor": [
                         88,
@@ -6030,7 +6030,7 @@
                 "speedLimit": 25,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 33.48,
+                "stockWeight": 33.48,
                 "hull": {
                     "frontArmor": [
                         50,
@@ -6213,7 +6213,7 @@
                 "speedLimit": 65,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 26.3,
+                "stockWeight": 26.3,
                 "hull": {
                     "frontArmor": [
                         50,
@@ -6319,7 +6319,7 @@
                 "speedLimit": 47.5,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 32.8,
+                "stockWeight": 32.8,
                 "hull": {
                     "frontArmor": [
                         90,
@@ -6425,7 +6425,7 @@
                 "speedLimit": 55,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 44.33,
+                "stockWeight": 44.33,
                 "hull": {
                     "frontArmor": [
                         80,
@@ -6678,7 +6678,7 @@
                 "speedLimit": 56,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 43.49,
+                "stockWeight": 43.49,
                 "hull": {
                     "frontArmor": [
                         76,
@@ -6939,7 +6939,7 @@
                 "speedLimit": 20,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 50.65,
+                "stockWeight": 50.65,
                 "hull": {
                     "frontArmor": [
                         152,
@@ -7147,7 +7147,7 @@
                 "speedLimit": 34,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 44.88,
+                "stockWeight": 44.88,
                 "hull": {
                     "frontArmor": [
                         120,
@@ -7581,7 +7581,7 @@
                 "speedLimit": 35,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 63,
+                "stockWeight": 63,
                 "hull": {
                     "frontArmor": [
                         102,
@@ -7956,7 +7956,7 @@
                 "speedLimit": 32,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 64.88,
+                "stockWeight": 64.88,
                 "hull": {
                     "frontArmor": [
                         120,
@@ -8456,7 +8456,7 @@
                 "speedLimit": 35,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 52.15,
+                "stockWeight": 52.15,
                 "hull": {
                     "frontArmor": [
                         90,
@@ -8866,7 +8866,7 @@
                 "speedLimit": 37,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 45.75,
+                "stockWeight": 45.75,
                 "hull": {
                     "frontArmor": [
                         90,
@@ -9251,7 +9251,7 @@
                 "speedLimit": 35,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 59.78,
+                "stockWeight": 59.78,
                 "hull": {
                     "frontArmor": [
                         200,
@@ -9696,7 +9696,7 @@
                 "speedLimit": 40,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 55.54,
+                "stockWeight": 55.54,
                 "hull": {
                     "frontArmor": [
                         100,
@@ -10107,7 +10107,7 @@
                 "speedLimit": 30,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 50.22,
+                "stockWeight": 50.22,
                 "hull": {
                     "frontArmor": [
                         60,
@@ -10291,7 +10291,7 @@
                 "speedLimit": 14,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 17.59,
+                "stockWeight": 17.59,
                 "hull": {
                     "frontArmor": [
                         28,
@@ -10484,7 +10484,7 @@
                 "speedLimit": 30,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 45.25,
+                "stockWeight": 45.25,
                 "hull": {
                     "frontArmor": [
                         20,
@@ -10692,7 +10692,7 @@
                 "speedLimit": 60,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 29.65,
+                "stockWeight": 29.65,
                 "hull": {
                     "frontArmor": [
                         40,
@@ -10865,7 +10865,7 @@
                 "speedLimit": 46,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 29.61,
+                "stockWeight": 29.61,
                 "hull": {
                     "frontArmor": [
                         50,
@@ -11048,7 +11048,7 @@
                 "speedLimit": 38.6,
                 "camoValue": 0,
                 "crewLevel": 100,
-                "topWeight": 26.84,
+                "stockWeight": 26.84,
                 "hull": {
                     "frontArmor": [
                         50,

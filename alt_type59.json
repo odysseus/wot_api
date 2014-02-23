@@ -1,0 +1,225 @@
+{
+    "balanceweight": "48.0",
+    "id": "0",
+    "userstring": "Type 59",
+    "description": "#china:ch01_type59_descr",
+    "price": {
+        "value": "7500",
+        "kind": "gold"
+    },
+    "tags": "mediumtank",
+    "level": "8",
+    "notinshop": "true",
+    "crew": {
+        "commander1": [],
+        "driver1": [],
+        "gunner1": [],
+        "loader1": [
+            "radioman"
+        ]
+    },
+    "speedlimits": {
+        "forward": "56",
+        "backward": "20"
+    },
+    "repaircost": "5.7",
+    "crewxpfactor": "1.0",
+    "hull": {
+        "primaryarmor": [
+            "100",
+            "80",
+            "45"
+        ],
+        "weight": "16478",
+        "maxhealth": "1040",
+        "ammobayhealth": {
+            "maxhealth": "170",
+            "maxregenhealth": "100",
+            "repaircost": "2.0"
+        }
+    },
+    "chassis": {
+        "chassis_ch01_type59_2": {
+            "userstring": "Type 59",
+            "level": "8",
+            "price": "30200.0",
+            "maxclimbangle": "25",
+            "weight": "7700",
+            "maxload": "39800",
+            "terrainresistance": [
+                "0.9",
+                "1",
+                "2"
+            ],
+            "brakeforce": "36500",
+            "rotationisaroundcenter": "false",
+            "rotationspeed": "46",
+            "shotdispersionfactors": {
+                "vehiclemovement": "0.18",
+                "vehiclerotation": "0.18"
+            },
+            "maxhealth": "210",
+            "maxregenhealth": "160",
+            "repaircost": "7.5"
+        }
+    },
+    "turrets0": {
+        "turret_1_ch01_type59_2": {
+            "userstring": "Type 59",
+            "level": "8",
+            "price": "28000.0",
+            "primaryarmor": [
+                "200",
+                "130",
+                "60"
+            ],
+            "weight": "8500",
+            "maxhealth": "260",
+            "rotationspeed": "46",
+            "turretrotatorhealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "49",
+                "repaircost": "1.0"
+            },
+            "circularvisionradius": "380",
+            "surveyingdevicehealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "49",
+                "repaircost": "1.0"
+            },
+            "guns": {
+                "_100mm_59": {
+                    "userstring": "100 mm Type 59",
+                    "level": "8",
+                    "price": "78180",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-20",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "33.25",
+                    "reloadtime": "8.7",
+                    "maxammo": "34",
+                    "aimingtime": "2.9",
+                    "weight": "2257",
+                    "maxhealth": "180",
+                    "maxregenhealth": "90",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.39",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.16",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_100mm_ubr-412": {
+                            "userstring": "Chuan bei-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "900",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "181",
+                                "160"
+                            ]
+                        },
+                        "_100mm_ubr-412p": {
+                            "userstring": "Chuan chao-412",
+                            "price": {
+                                "value": "11",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "1125",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "241",
+                                "213"
+                            ]
+                        },
+                        "_100mm_uof-412": {
+                            "userstring": "Sha bao-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "100",
+                            "explosionradius": "1.76",
+                            "damage": {
+                                "armor": "330",
+                                "devices": "135"
+                            },
+                            "speed": "900",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "50",
+                                "50"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-20",
+                            "3",
+                            "25"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "engines": {
+        "norinco_12150l7": {
+            "userstring": "NORINCO 12150L",
+            "tags": "diesel",
+            "level": "8",
+            "price": "79290",
+            "power": "520",
+            "weight": "750",
+            "maxhealth": "190",
+            "maxregenhealth": "95",
+            "repaircost": "7",
+            "firestartingchance": "0.12"
+        }
+    },
+    "fueltanks": {
+        "price": "100",
+        "weight": "275",
+        "maxhealth": "175",
+        "maxregenhealth": "70",
+        "repaircost": "1.0"
+    },
+    "radios": {
+        "_9rm": {
+            "userstring": "A-220",
+            "level": "9",
+            "price": "24240",
+            "weight": "40",
+            "distance": "600",
+            "maxhealth": "160",
+            "maxregenhealth": "96",
+            "repaircost": "3.5"
+        }
+    }
+}

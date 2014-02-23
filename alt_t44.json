@@ -1,0 +1,896 @@
+{
+    "balanceweight": 40,
+    "id": "17",
+    "userstring": "T-44",
+    "description": "#ussr:t-44_descr",
+    "price": {
+        "value": "2390000",
+        "kind": "silver"
+    },
+    "tags": "mediumtank",
+    "level": "8",
+    "crew": {
+        "commander1": [],
+        "driver1": [],
+        "gunner1": [],
+        "loader1": [
+            "radioman"
+        ]
+    },
+    "speedlimits": {
+        "forward": "51",
+        "backward": "20"
+    },
+    "repaircost": "8.95",
+    "crewxpfactor": "1.0",
+    "hull": {
+        "primaryarmor": [
+            "90",
+            "75",
+            "45"
+        ],
+        "weight": "15000",
+        "maxhealth": "960",
+        "ammobayhealth": {
+            "maxhealth": "180",
+            "maxregenhealth": "120",
+            "repaircost": "2.0"
+        }
+    },
+    "chassis": {
+        "t-44": {
+            "userstring": "T-44",
+            "level": "7",
+            "price": "16070.0",
+            "maxclimbangle": "25",
+            "weight": "7700",
+            "maxload": "33000",
+            "terrainresistance": [
+                "1.1",
+                "1.4",
+                "2.2"
+            ],
+            "brakeforce": "36500",
+            "rotationisaroundcenter": "false",
+            "rotationspeed": "42",
+            "shotdispersionfactors": {
+                "vehiclemovement": "0.22",
+                "vehiclerotation": "0.22"
+            },
+            "maxhealth": "180",
+            "maxregenhealth": "135",
+            "repaircost": "7.5"
+        },
+        "t-44bis": {
+            "userstring": "T-44M",
+            "level": "8",
+            "price": "30200.0",
+            "maxclimbangle": "25",
+            "weight": "7700",
+            "maxload": "35300",
+            "terrainresistance": [
+                "1",
+                "1.2",
+                "2"
+            ],
+            "brakeforce": "38500",
+            "rotationisaroundcenter": "false",
+            "rotationspeed": "44",
+            "shotdispersionfactors": {
+                "vehiclemovement": "0.2",
+                "vehiclerotation": "0.2"
+            },
+            "maxhealth": "200",
+            "maxregenhealth": "150",
+            "repaircost": "7.5"
+        }
+    },
+    "turrets0": {
+        "t-44": {
+            "userstring": "T-44",
+            "level": "8",
+            "price": "28000.0",
+            "primaryarmor": [
+                "120",
+                "90",
+                "75"
+            ],
+            "weight": "7000",
+            "maxhealth": "240",
+            "rotationspeed": "48",
+            "turretrotatorhealth": {
+                "maxhealth": "140",
+                "maxregenhealth": "70",
+                "repaircost": "1.0"
+            },
+            "circularvisionradius": "370",
+            "surveyingdevicehealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "50",
+                "repaircost": "1.0"
+            },
+            "guns": {
+                "_85mm_zis_s-53": {
+                    "userstring": "85 mm S-53",
+                    "level": "6",
+                    "price": "62000",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-25",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "39.375",
+                    "reloadtime": "4.8",
+                    "maxammo": "64",
+                    "aimingtime": "2.9",
+                    "weight": "1550",
+                    "maxhealth": "122",
+                    "maxregenhealth": "61",
+                    "repaircost": "6",
+                    "shotdispersionradius": "0.42",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.16",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_85mm_ubr-365k": {
+                            "userstring": "UBR-365K",
+                            "price": {
+                                "value": "109",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "160",
+                                "devices": "115"
+                            },
+                            "speed": "792",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "126",
+                                "110"
+                            ]
+                        },
+                        "_85mm_ubr-365p": {
+                            "userstring": "UBR-365P",
+                            "price": {
+                                "value": "7",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "160",
+                                "devices": "115"
+                            },
+                            "speed": "990",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "167",
+                                "140"
+                            ]
+                        },
+                        "_85mm_uof-365k": {
+                            "userstring": "UOF-365K",
+                            "price": {
+                                "value": "98",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "85",
+                            "explosionradius": "1.32",
+                            "damage": {
+                                "armor": "280",
+                                "devices": "115"
+                            },
+                            "speed": "792",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "43",
+                                "43"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-25",
+                            "5",
+                            "20"
+                        ]
+                    }
+                },
+                "_85mm_d5t-85bm": {
+                    "userstring": "85 mm D5T-85BM",
+                    "level": "7",
+                    "price": "73600",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-25",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "39.375",
+                    "reloadtime": "5.7",
+                    "maxammo": "58",
+                    "aimingtime": "2.9",
+                    "weight": "1850",
+                    "maxhealth": "134",
+                    "maxregenhealth": "67",
+                    "repaircost": "6",
+                    "shotdispersionradius": "0.37",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.16",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_85mm_ubr-365kbm": {
+                            "userstring": "UBR-365KBM",
+                            "price": {
+                                "value": "175",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "180",
+                                "devices": "115"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "144",
+                                "125"
+                            ]
+                        },
+                        "_85mm_ubr-365pbm": {
+                            "userstring": "UBR-365PBM",
+                            "price": {
+                                "value": "8",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "180",
+                                "devices": "115"
+                            },
+                            "speed": "1188",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "194",
+                                "168"
+                            ]
+                        },
+                        "_85mm_uof-365bm": {
+                            "userstring": "UOF-365BM",
+                            "price": {
+                                "value": "139",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "85",
+                            "explosionradius": "1.32",
+                            "damage": {
+                                "armor": "300",
+                                "devices": "115"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "44",
+                                "44"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-25",
+                            "6",
+                            "25"
+                        ]
+                    }
+                }
+            }
+        },
+        "t-44-100": {
+            "userstring": "T-44-100",
+            "level": "9",
+            "price": "48000.0",
+            "primaryarmor": [
+                "120",
+                "100",
+                "100"
+            ],
+            "weight": "7800",
+            "maxhealth": "340",
+            "rotationspeed": "48",
+            "turretrotatorhealth": {
+                "maxhealth": "140",
+                "maxregenhealth": "70",
+                "repaircost": "1.0"
+            },
+            "circularvisionradius": "380",
+            "surveyingdevicehealth": {
+                "maxhealth": "100",
+                "maxregenhealth": "50",
+                "repaircost": "1.0"
+            },
+            "invisibilityfactor": "0.983",
+            "guns": {
+                "_85mm_zis_s-53": {
+                    "userstring": "85 mm S-53",
+                    "level": "6",
+                    "price": "62000",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-25",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "39.375",
+                    "reloadtime": "4.7",
+                    "maxammo": "70",
+                    "aimingtime": "2.9",
+                    "weight": "1550",
+                    "maxhealth": "122",
+                    "maxregenhealth": "61",
+                    "repaircost": "6",
+                    "shotdispersionradius": "0.42",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_85mm_ubr-365k": {
+                            "userstring": "UBR-365K",
+                            "price": {
+                                "value": "109",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "160",
+                                "devices": "115"
+                            },
+                            "speed": "792",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "126",
+                                "110"
+                            ]
+                        },
+                        "_85mm_ubr-365p": {
+                            "userstring": "UBR-365P",
+                            "price": {
+                                "value": "7",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "160",
+                                "devices": "115"
+                            },
+                            "speed": "990",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "167",
+                                "140"
+                            ]
+                        },
+                        "_85mm_uof-365k": {
+                            "userstring": "UOF-365K",
+                            "price": {
+                                "value": "98",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "85",
+                            "explosionradius": "1.32",
+                            "damage": {
+                                "armor": "280",
+                                "devices": "115"
+                            },
+                            "speed": "792",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "43",
+                                "43"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-25",
+                            "5",
+                            "20"
+                        ]
+                    }
+                },
+                "_85mm_d5t-85bm": {
+                    "userstring": "85 mm D5T-85BM",
+                    "level": "7",
+                    "price": "73600",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-25",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "39.375",
+                    "reloadtime": "5.6",
+                    "maxammo": "64",
+                    "aimingtime": "2.9",
+                    "weight": "1850",
+                    "maxhealth": "134",
+                    "maxregenhealth": "67",
+                    "repaircost": "6",
+                    "shotdispersionradius": "0.37",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_85mm_ubr-365kbm": {
+                            "userstring": "UBR-365KBM",
+                            "price": {
+                                "value": "175",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "180",
+                                "devices": "115"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "144",
+                                "125"
+                            ]
+                        },
+                        "_85mm_ubr-365pbm": {
+                            "userstring": "UBR-365PBM",
+                            "price": {
+                                "value": "8",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "85",
+                            "damage": {
+                                "armor": "180",
+                                "devices": "115"
+                            },
+                            "speed": "1188",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "194",
+                                "168"
+                            ]
+                        },
+                        "_85mm_uof-365bm": {
+                            "userstring": "UOF-365BM",
+                            "price": {
+                                "value": "139",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "85",
+                            "explosionradius": "1.32",
+                            "damage": {
+                                "armor": "300",
+                                "devices": "115"
+                            },
+                            "speed": "950",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "44",
+                                "44"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-25",
+                            "6",
+                            "25"
+                        ]
+                    }
+                },
+                "_100mm_d10t": {
+                    "userstring": "100 mm D10T",
+                    "level": "7",
+                    "price": "78180",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-23",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "33.25",
+                    "reloadtime": "9.1",
+                    "maxammo": "56",
+                    "aimingtime": "2.9",
+                    "weight": "2257",
+                    "maxhealth": "148",
+                    "maxregenhealth": "74",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.42",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_100mm_ubr-412": {
+                            "userstring": "UBR-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "895",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "175",
+                                "155"
+                            ]
+                        },
+                        "_100mm_ubr-412p": {
+                            "userstring": "UBR-412P",
+                            "price": {
+                                "value": "11",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "1119",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "235",
+                                "208"
+                            ]
+                        },
+                        "_100mm_uof-412": {
+                            "userstring": "UOF-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "100",
+                            "explosionradius": "1.76",
+                            "damage": {
+                                "armor": "330",
+                                "devices": "135"
+                            },
+                            "speed": "895",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "50",
+                                "50"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-23",
+                            "5",
+                            "20"
+                        ]
+                    }
+                },
+                "_100mm_lb-1": {
+                    "userstring": "100 mm LB-1",
+                    "level": "7",
+                    "price": "130750",
+                    "impulse": "0.44",
+                    "pitchlimits": [
+                        "-23",
+                        "7"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "33.25",
+                    "reloadtime": "8.6",
+                    "maxammo": "56",
+                    "aimingtime": "2.3",
+                    "weight": "2400",
+                    "maxhealth": "180",
+                    "maxregenhealth": "90",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.35",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_100mm_ubr-412": {
+                            "userstring": "UBR-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "880",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "175",
+                                "155"
+                            ]
+                        },
+                        "_100mm_ubr-412p": {
+                            "userstring": "UBR-412P",
+                            "price": {
+                                "value": "11",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "100",
+                            "damage": {
+                                "armor": "250",
+                                "devices": "135"
+                            },
+                            "speed": "1100",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "235",
+                                "208"
+                            ]
+                        },
+                        "_100mm_uof-412": {
+                            "userstring": "UOF-412",
+                            "price": {
+                                "value": "252",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "100",
+                            "explosionradius": "1.76",
+                            "damage": {
+                                "armor": "330",
+                                "devices": "135"
+                            },
+                            "speed": "880",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "50",
+                                "50"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-23",
+                            "5",
+                            "20"
+                        ]
+                    }
+                },
+                "_122mm_d-25-44": {
+                    "userstring": "122 mm D-25-44",
+                    "level": "8",
+                    "price": "106370",
+                    "impulse": "0.62",
+                    "pitchlimits": [
+                        "-23",
+                        "5"
+                    ],
+                    "turretyawlimits": [
+                        "-180",
+                        "180"
+                    ],
+                    "rotationspeed": "21.875",
+                    "reloadtime": "19.2",
+                    "maxammo": "26",
+                    "aimingtime": "3.4",
+                    "weight": "2600",
+                    "maxhealth": "192",
+                    "maxregenhealth": "96",
+                    "repaircost": "8",
+                    "shotdispersionradius": "0.43",
+                    "shotdispersionfactors": {
+                        "turretrotation": "0.14",
+                        "aftershot": "4.0",
+                        "whilegundamaged": "2.0"
+                    },
+                    "shots": {
+                        "_122mm_ubr-471": {
+                            "userstring": "UBR-471",
+                            "price": {
+                                "value": "1025",
+                                "kind": "silver"
+                            },
+                            "kind": "armor_piercing",
+                            "caliber": "122",
+                            "damage": {
+                                "armor": "390",
+                                "devices": "165"
+                            },
+                            "speed": "800",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "175",
+                                "152"
+                            ]
+                        },
+                        "_122mm_ubr-471p": {
+                            "userstring": "UBR-471P",
+                            "price": {
+                                "value": "12",
+                                "kind": "gold"
+                            },
+                            "kind": "armor_piercing_cr",
+                            "caliber": "122",
+                            "damage": {
+                                "armor": "390",
+                                "devices": "165"
+                            },
+                            "speed": "1000",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "217",
+                                "204"
+                            ]
+                        },
+                        "_122mm_uof-471": {
+                            "userstring": "UOF-471",
+                            "price": {
+                                "value": "608",
+                                "kind": "silver"
+                            },
+                            "kind": "high_explosive",
+                            "caliber": "122",
+                            "explosionradius": "2.49",
+                            "damage": {
+                                "armor": "465",
+                                "devices": "165"
+                            },
+                            "speed": "800",
+                            "gravity": "9.81",
+                            "maxdistance": "720",
+                            "piercingpower": [
+                                "61",
+                                "61"
+                            ]
+                        }
+                    },
+                    "extrapitchlimits": {
+                        "back": [
+                            "-23",
+                            "4",
+                            "20"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "engines": {
+        "v-2-44": {
+            "userstring": "V-2-44",
+            "tags": "diesel",
+            "level": "8",
+            "price": "49740",
+            "power": "560",
+            "weight": "750",
+            "maxhealth": "260",
+            "maxregenhealth": "130",
+            "repaircost": "8",
+            "firestartingchance": "0.12"
+        },
+        "v-2-54": {
+            "userstring": "V-2-54",
+            "tags": "diesel",
+            "level": "9",
+            "price": "79290",
+            "power": "620",
+            "weight": "700",
+            "maxhealth": "370",
+            "maxregenhealth": "185",
+            "repaircost": "9",
+            "firestartingchance": "0.12"
+        },
+        "v-54-6": {
+            "userstring": "V-54-6",
+            "tags": "diesel",
+            "level": "9",
+            "price": "82300",
+            "power": "680",
+            "weight": "700",
+            "maxhealth": "370",
+            "maxregenhealth": "185",
+            "repaircost": "9",
+            "firestartingchance": "0.12"
+        }
+    },
+    "fueltanks": {
+        "price": "100",
+        "weight": "275",
+        "maxhealth": "175",
+        "maxregenhealth": "70",
+        "repaircost": "1.0"
+    },
+    "radios": {
+        "_9rm": {
+            "userstring": "9RM",
+            "level": "8",
+            "price": "24240",
+            "weight": "100",
+            "distance": "525",
+            "maxhealth": "120",
+            "maxregenhealth": "60",
+            "repaircost": "1.5"
+        },
+        "r113": {
+            "userstring": "R-113",
+            "level": "10",
+            "price": "52200",
+            "weight": "80",
+            "distance": "730",
+            "maxhealth": "200",
+            "maxregenhealth": "150",
+            "repaircost": "3"
+        }
+    }
+}

@@ -10,6 +10,7 @@
     "baseHitpoints": 1040,
     "gunArc": 360,
     "speedLimit": 56,
+    "reverseSpeed": 0,
     "camoValue": 16,
     "crewLevel": 100,
     "topWeight": 36,

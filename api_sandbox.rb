@@ -381,7 +381,7 @@ def generate_json_for_tier num
   tier_string = %Q$"tier#{num}": {$
   n = 0
   tier.each_key do |type|
-    type_string = %Q$\n"#{type}": {\n$
+    type_string = %Q$\n"#{type}": {$
     tier[type].each do |tank|
       begin
         tank_json = generate_tank_json_for_tank(tank)
