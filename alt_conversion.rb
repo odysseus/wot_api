@@ -175,7 +175,8 @@ def set_stock_and_top tank
       turret_arr.push(tdata)
     end
     tweights = {
-      viewRange: 100
+      viewRange: 50 * 1.0,
+      tier: 50 * 100.0
     }
     weigh_modules(turret_arr, tweights)
 
@@ -200,11 +201,12 @@ def set_stock_and_top tank
       # gets smaller, by using a negative adjustment, it actually removes from 
       # the score, but it removes less on tanks with smaller (better) numbers
       gweights = {
-        penetration: 40 * 1.5,
-        damage: 20 * 1.0,
-        damagePerMinute: 15 * 0.15,
-        accuracy: 10 * -625.0,
-        aimTime: 15 * -85.0
+        penetration: 35 * 1.5,
+        damage: 15 * 1.0,
+        damagePerMinute: 10 * 0.15,
+        accuracy: 5 * -625.0,
+        aimTime: 10 * -85.0,
+        tier: 25 * 25.0
       }
       weigh_modules(gun_arr, gweights)
     end # guns
@@ -223,7 +225,8 @@ def set_stock_and_top tank
     engine_arr.push(edata)
   end
   eweights = {
-    horsepower: 100
+    horsepower: 50 * 1.0,
+    tier: 50 * 100.0
   }
   weigh_modules(engine_arr, eweights)
 
@@ -233,7 +236,8 @@ def set_stock_and_top tank
     radio_arr.push(rdata)
   end
   rweights = {
-    signalRange: 100
+    signalRange: 50 * 1.0,
+    tier: 50 * 50.0
   }
   weigh_modules(radio_arr, rweights)
 
@@ -243,7 +247,8 @@ def set_stock_and_top tank
     suspension_arr.push(cdata)
   end
   sweights = {
-    loadLimit: 100
+    loadLimit: 50 * 1.0,
+    tier: 50 * 5.0
   }
   weigh_modules(suspension_arr, sweights)
 end
@@ -384,4 +389,4 @@ end
 tank = "alt_t44.json"
 
 #puts tank_hash(tank)
-write_conversion(tank)
+#write_conversion(tank)
