@@ -141,6 +141,31 @@ def parse_tank tank
   return t
 end
 
+def weigh_modules mod_arr, weights
+  # First convert weights to be <1 and a % of the total value, this way any
+  # numbers can be passed as weights and it will use the ratio of those numbers
+  # to each other properly, while still keeping consistent scoring
+  total = 0.0
+  converted_weights = {}
+  weights.each do |key, value|
+    total += value
+  end
+  weights.each do |key, value|
+    converted_weights[key] = value.to_f / total
+  end
+  mod_arr.each do |mod|
+    score = 0
+    weights.each do |wkey, wvalue|
+      score += mod[wkey.to_s] * wvalue
+    end
+    mod['modScore'] = score
+    puts "#{mod['name']}: #{score}"
+  end
+  mod_arr.sort! { |x,y| x['modScore'] <=> y['modScore'] }
+  mod_arr.first['stockModule'] = true
+  mod_arr.last['topModule'] = true
+end
+
 def set_stock_and_top tank
   # Setting all the stock and top values so the tank inits properly
   if tank['turreted']
@@ -149,9 +174,10 @@ def set_stock_and_top tank
     tank['turrets'].each do |tkey, tdata|
       turret_arr.push(tdata)
     end
-    turret_arr.sort! { |x,y| x['viewRange'] <=> y['viewRange'] }
-    turret_arr.first['stockModule'] = true
-    turret_arr.last['topModule'] = true
+    tweights = {
+      viewRange: 100
+    }
+    weigh_modules(turret_arr, tweights)
 
     # Guns
     turret_arr.each do |turret|
@@ -159,9 +185,28 @@ def set_stock_and_top tank
       turret['availableGuns'].each do |gkey, gdata|
         gun_arr.push(gdata)
       end
-      gun_arr.sort! { |x,y| x['penetration'] <=> y['penetration'] }
-      gun_arr.first['stockModule'] = true
-      gun_arr.last['topModule'] = true
+      #
+      # This will need revisiting, the simple weighting this does has to 
+      # value both the worth of the modules and compensate for discrepancies
+      # in variations between the values, it should only need to include the
+      # weights
+      #
+      # Right now, the first number is the weight in % that you want it to have
+      # the second number compensates for the relative size difference in the 
+      # numbers, for example, accuracy is roughly 625 times smaller than damage
+      # so multiplying by 625 puts the numbers on equal footing
+      #
+      # Negative numbers are for regressive stats: it gets better as the number
+      # gets smaller, by using a negative adjustment, it actually removes from 
+      # the score, but it removes less on tanks with smaller (better) numbers
+      gweights = {
+        penetration: 40 * 1.5,
+        damage: 20 * 1.0,
+        damagePerMinute: 15 * 0.15,
+        accuracy: 10 * -625.0,
+        aimTime: 15 * -85.0
+      }
+      weigh_modules(gun_arr, gweights)
     end # guns
   else # non-turreted vehicles
     # Guns
@@ -169,9 +214,7 @@ def set_stock_and_top tank
     tank['hull']['availableGuns'].each do |gkey, gdata|
       gun_arr.push(gdata)
     end
-    gun_arr.sort! { |x,y| x['penetration'] <=> y['penetration'] }
-    gun_arr.first['stockModule'] = true
-    gun_arr.last['topModule'] = true
+    weigh_modules(gun_arr, gweights)
   end # turret/guns
 
   # Engines
@@ -179,27 +222,30 @@ def set_stock_and_top tank
   tank['engines'].each do |ekey, edata|
     engine_arr.push(edata)
   end
-  engine_arr.sort! { |x,y| x['horsepower'] <=> y['horsepower'] }
-  engine_arr.first['stockModule'] = true
-  engine_arr.last['topModule'] = true
+  eweights = {
+    horsepower: 100
+  }
+  weigh_modules(engine_arr, eweights)
 
   # Radios
   radio_arr = []
   tank['radios'].each do |rkey, rdata|
     radio_arr.push(rdata)
   end
-  radio_arr.sort! { |x,y| x['signalRange'] <=> y['signalRange'] }
-  radio_arr.first['stockModule'] = true
-  radio_arr.last['topModule'] = true
+  rweights = {
+    signalRange: 100
+  }
+  weigh_modules(radio_arr, rweights)
 
   # Suspension
   suspension_arr = []
   tank['suspensions'].each do |ckey, cdata|
     suspension_arr.push(cdata)
   end
-  suspension_arr.sort! { |x,y| x['loadLimit'] <=> y['loadLimit'] }
-  suspension_arr.first['stockModule'] = true
-  suspension_arr.last['topModule'] = true
+  sweights = {
+    loadLimit: 100
+  }
+  weigh_modules(suspension_arr, sweights)
 end
 
 def parse_hull tank
@@ -277,6 +323,9 @@ def parse_gun gdata
     ]
     gun['shells'].push(arr)
   end #shell
+  gun['penetration'] = gun['shells'][0][0]
+  gun['damage'] = gun['shells'][0][1]
+  gun['damagePerMinute'] = gun['rateOfFire'] * gun['damage']
   return gun
 end
 
@@ -334,5 +383,5 @@ end
 
 tank = "alt_t44.json"
 
-puts tank_hash(tank)
+#puts tank_hash(tank)
 write_conversion(tank)

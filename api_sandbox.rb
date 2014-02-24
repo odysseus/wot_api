@@ -367,7 +367,3 @@ end
 
 $list_of_vehicles = list_of_vehicles
 $sorted_vehicle_dict = sorted_vehicle_dict
-
-File.open("checklist.json", "w") do |file|
-  file.write(create_name_checklist.to_json)
-end
