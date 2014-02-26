@@ -352,7 +352,7 @@ def create_name_checklist
       final[tier][type] = []
       $sorted_vehicle_dict[tier][type].each do |tankid|
         tank = $list_of_vehicles[tankid.to_s]
-        tankstring = "#{tank['name_i18n']} - #{tank['nation_i18n']}"
+        tankstring = "#{tank['name_i18n']}"
         final[tier][type].push(tankstring)
       end # tank
     end # type
@@ -367,3 +367,7 @@ end
 
 $list_of_vehicles = list_of_vehicles
 $sorted_vehicle_dict = sorted_vehicle_dict
+
+File.open("checklist.json", "w") do |file|
+  file.write(create_name_checklist.to_json)
+end

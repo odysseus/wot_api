@@ -1,0 +1,450 @@
+{
+    "tier1": {
+        "mediumTank": [
+            "Vickers Medium Mk. I"
+        ],
+        "lightTank": [
+            "Leichttraktor",
+            "Renault FT",
+            "Renault NC-31",
+            "Renault Otsu",
+            "MS-1",
+            "T1 Cunningham"
+        ]
+    },
+    "tier2": {
+        "lightTank": [
+            "BT-2",
+            "T2 Light Tank",
+            "T1E6",
+            "Vickers Mk. E Type B",
+            "T-60",
+            "Cruiser Mk. I",
+            "Pz.Kpfw. II",
+            "Pz.Kpfw. 35 (t)",
+            "Type 95 Ha-Go",
+            "D1",
+            "T7 Combat Car",
+            "T-26",
+            "Tetrarch",
+            "Pz.Kpfw. 38H 735 (f)",
+            "Hotchkiss H35",
+            "M2 Light Tank",
+            "Light Mk. VIC",
+            "Cruiser Mk. III",
+            "Pz.Kpfw. I"
+        ],
+        "SPG": [
+            "T57",
+            "Loyd Gun Carriage",
+            "Renault FT 75 BS",
+            "SU-18",
+            "G.Pz. Mk. VI (e)"
+        ],
+        "mediumTank": [
+            "T2 Medium Tank",
+            "Chi-Ni",
+            "Vickers Medium Mk. II"
+        ],
+        "AT-SPG": [
+            "Universal Carrier 2-pdr",
+            "AT-1",
+            "Renault FT AC",
+            "T18",
+            "Panzerjäger I"
+        ]
+    },
+    "tier3": {
+        "mediumTank": [
+            "Type 97 Chi-Ha",
+            "Pz.Kpfw. S35 739 (f)",
+            "D2",
+            "M2 Medium Tank",
+            "Vickers Medium Mk. III"
+        ],
+        "lightTank": [
+            "Pz.Kpfw. 38 (t)",
+            "Cruiser Mk. IV",
+            "T-46",
+            "Pz.Kpfw. I Ausf. C",
+            "Type 98 Ke-Ni",
+            "M3 Stuart",
+            "M3 Light",
+            "BT-7",
+            "T-70",
+            "Type 2597 Chi-Ha",
+            "Pz.Kpfw. II Ausf. J",
+            "Cruiser Mk. II",
+            "Pz.Kpfw. III Ausf. A",
+            "T-127",
+            "LTP",
+            "Pz.Kpfw. II Ausf. G",
+            "Type 98 Ke-Ni Otsu",
+            "M22 Locust",
+            "BT-SV",
+            "AMX 38",
+            "T-15"
+        ],
+        "AT-SPG": [
+            "Renault UE 57",
+            "T82",
+            "Marder II",
+            "FCM 36 Pak 40",
+            "SU-76",
+            "Valentine AT"
+        ],
+        "SPG": [
+            "M7 Priest",
+            "Sturmpanzer I Bison",
+            "Wespe",
+            "SU-26",
+            "Lorraine 39L AM",
+            "Sexton I",
+            "Sexton II"
+        ]
+    },
+    "tier4": {
+        "heavyTank": [
+            "Pz.Kpfw. B2 740 (f)",
+            "Durchbruchswagen 2",
+            "B1"
+        ],
+        "mediumTank": [
+            "Pz.Kpfw. III",
+            "A-32",
+            "M3 Lee",
+            "VK 20.01 (D)",
+            "Matilda",
+            "T-28",
+            "Type 1 Chi-He"
+        ],
+        "AT-SPG": [
+            "T40",
+            "SU-85B",
+            "Marder 38T",
+            "Hetzer",
+            "Alecto",
+            "Somua SAu 40",
+            "M8A1"
+        ],
+        "lightTank": [
+            "M5A1 Stuart",
+            "A-20",
+            "AMX 40",
+            "Pz.Kpfw. II Luchs",
+            "Pz.Kpfw. 38 (t) n.A.",
+            "Valentine",
+            "Type 5 Ke-Ho",
+            "M5 Stuart",
+            "Valentine II",
+            "T-80",
+            "T-50",
+            "Covenanter"
+        ],
+        "SPG": [
+            "Pz.Sfl. IVb",
+            "SU-5",
+            "M37",
+            "Birch Gun",
+            "Sturmpanzer II",
+            "AMX 105 AM mle. 47"
+        ]
+    },
+    "tier5": {
+        "mediumTank": [
+            "T-34",
+            "Pz.Kpfw. IV",
+            "Type 3 Chi-Nu",
+            "Pz.Kpfw. III/IV",
+            "Type 3 Chi-Nu Kai",
+            "T-25",
+            "M4A2E4 Sherman",
+            "M7",
+            "M4 Sherman",
+            "Matilda IV",
+            "Type T-34",
+            "Matilda Black Prince",
+            "Ram II"
+        ],
+        "SPG": [
+            "AMX 13 105 AM mle. 50",
+            "SU-122A",
+            "M41",
+            "Bishop",
+            "Grille",
+            "105 leFH18B2"
+        ],
+        "lightTank": [
+            "VK 16.02 Leopard",
+            "M24 Chaffee",
+            "Crusader",
+            "ELC AMX"
+        ],
+        "heavyTank": [
+            "KV-220",
+            "Excelsior",
+            "T1 Heavy Tank",
+            "Churchill III",
+            "T14",
+            "Churchill I",
+            "BDR G1 B",
+            "KV-1",
+            "VK 30.01 (H)"
+        ],
+        "AT-SPG": [
+            "StuG III",
+            "SU-85I",
+            "S35 CA",
+            "T49",
+            "Pz.Sfl. IVc",
+            "SU-85",
+            "AT 2",
+            "M10 Wolverine"
+        ]
+    },
+    "tier6": {
+        "heavyTank": [
+            "VK 36.01 (H)",
+            "T-150",
+            "TOG II*",
+            "KV-1S",
+            "ARL 44",
+            "M6",
+            "Churchill VII",
+            "KV-2"
+        ],
+        "lightTank": [
+            "59-16",
+            "AMX 12 t",
+            "Type 64",
+            "VK 28.01",
+            "MT-25",
+            "T21"
+        ],
+        "mediumTank": [
+            "Pz.Kpfw. IV Schmalturm",
+            "A-43",
+            "Cromwell",
+            "VK 30.01 (P)",
+            "T-34-85",
+            "M4A3E8 Sherman",
+            "VK 30.01 (D)",
+            "Pz.Kpfw. V/IV",
+            "Type 58",
+            "M4A3E2 Sherman Jumbo",
+            "Type 4 Chi-To",
+            "VK 30.02 (M)"
+        ],
+        "AT-SPG": [
+            "AT 8",
+            "SU-100Y",
+            "M18 Hellcat",
+            "SU-100",
+            "M36 Jackson",
+            "Churchill Gun Carrier",
+            "Jagdpanzer IV",
+            "ARL V39",
+            "Dicker Max",
+            "Nashorn"
+        ],
+        "SPG": [
+            "Hummel",
+            "AMX 13 F3 AM",
+            "M44",
+            "SU-8",
+            "FV304"
+        ]
+    },
+    "tier7": {
+        "mediumTank": [
+            "Panther",
+            "VK 30.02 (D)",
+            "KV-13",
+            "Type 5 Chi-Ri",
+            "T-43",
+            "Comet",
+            "T-34-1",
+            "T20",
+            "Panther/M10",
+            "A-44"
+        ],
+        "lightTank": [
+            "AMX 13 75",
+            "Type 62",
+            "Aufklärungspanzer Panther",
+            "T71",
+            "WZ-131"
+        ],
+        "AT-SPG": [
+            "SU-152",
+            "SU-100M1",
+            "AT 15A",
+            "AT 7",
+            "AMX AC mle. 46",
+            "T25 AT",
+            "Pz.Sfl. V",
+            "E 25",
+            "SU-122-44",
+            "Jagdpanther",
+            "T25/2"
+        ],
+        "heavyTank": [
+            "Black Prince",
+            "IS",
+            "T29",
+            "KV-3",
+            "AMX M4 mle. 45",
+            "IS-2",
+            "Tiger (P)",
+            "Tiger I"
+        ],
+        "SPG": [
+            "S-51",
+            "Crusader 5.5-in. SP",
+            "SU-14-1",
+            "Lorraine 155 mle. 50",
+            "G.W. Panther",
+            "M12"
+        ]
+    },
+    "tier8": {
+        "heavyTank": [
+            "AMX 50 100",
+            "IS-6",
+            "VK 45.02 (P) Ausf. A",
+            "T32",
+            "Tiger II",
+            "T34",
+            "110",
+            "Löwe",
+            "FCM 50 t",
+            "KV-4",
+            "Caernarvon",
+            "112",
+            "IS-3",
+            "KV-5",
+            "M6A2E1"
+        ],
+        "AT-SPG": [
+            "ISU-152",
+            "AT 15",
+            "8,8 cm Pak 43 Jagdtiger",
+            "Jagdpanther II",
+            "Rhm.-Borsig Waffenträger",
+            "AMX AC mle. 48",
+            "SU-101",
+            "T28",
+            "T28 Prototype",
+            "Ferdinand"
+        ],
+        "SPG": [
+            "SU-14-2",
+            "M40/M43",
+            "G.W. Tiger (P)",
+            "FV207",
+            "Lorraine 155 mle. 51"
+        ],
+        "mediumTank": [
+            "Panther II",
+            "Object 416",
+            "T-34-2",
+            "T-34-3",
+            "STA-1",
+            "T69",
+            "Centurion Mk. I",
+            "Type 59",
+            "T26E4 SuperPershing",
+            "M26 Pershing",
+            "T-44",
+            "Indien-Panzer"
+        ],
+        "lightTank": [
+            "AMX 13 90",
+            "WZ-132"
+        ]
+    },
+    "tier9": {
+        "heavyTank": [
+            "VK 45.02 (P) Ausf. B",
+            "Conqueror",
+            "AMX 50 120",
+            "M103",
+            "ST-I",
+            "WZ-111 model 1-4",
+            "E 75",
+            "IS-8"
+        ],
+        "SPG": [
+            "FV3805",
+            "Bat.-Châtillon 155 55",
+            "212A",
+            "G.W. Tiger",
+            "M53/M55"
+        ],
+        "AT-SPG": [
+            "T95",
+            "Object 704",
+            "T30",
+            "AMX 50 Foch",
+            "Waffenträger auf Pz. IV",
+            "Jagdtiger",
+            "Tortoise",
+            "SU-122-54"
+        ],
+        "mediumTank": [
+            "Object 430 Version II",
+            "T-54",
+            "WZ-120",
+            "E 50",
+            "Type 61",
+            "T54E1",
+            "Centurion Mk. 7/1",
+            "Lorraine 40 t",
+            "M46 Patton",
+            "Leopard Prototyp A"
+        ]
+    },
+    "tier10": {
+        "mediumTank": [
+            "121",
+            "Leopard 1",
+            "E 50 Ausf. M",
+            "FV4202",
+            "Object 430",
+            "Bat.-Châtillon 25 t",
+            "T-62A",
+            "Object 140",
+            "STB-1",
+            "M48A1 Patton"
+        ],
+        "heavyTank": [
+            "AMX 50 B",
+            "FV215b",
+            "IS-4",
+            "E 100",
+            "T110E5",
+            "T57 Heavy Tank",
+            "Maus",
+            "IS-7",
+            "113",
+            "VK 72.01 (K)"
+        ],
+        "AT-SPG": [
+            "T110E3",
+            "Object 263",
+            "Waffenträger auf E 100",
+            "FV215b (183)",
+            "AMX 50 Foch (155)",
+            "Jagdpanzer E 100",
+            "T110E4",
+            "Object 268"
+        ],
+        "SPG": [
+            "T92",
+            "Conqueror Gun Carriage",
+            "G.W. E 100",
+            "Bat.-Châtillon 155 58",
+            "Object 261"
+        ]
+    }
+}
